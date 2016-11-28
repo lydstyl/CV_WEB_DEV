@@ -35,13 +35,13 @@ p{margin:0;}
 .column.left .progressBox .bar .photoshop{width:50%;background:white}
 .column.left .progressBox .bar .html{width:90% ;background:white}
 .column.left .progressBox .bar .css{width:80% ;background:white}
-.column.left .progressBox .bar .javascript{width:20% ;background:white}
-.column.left .progressBox .bar .php{width:50% ;background:white}
-.column.left .progressBox .bar .python{width:70% ;background:white}
-.column.left .progressBox .bar .sql{width:40% ;background:white}
+.column.left .progressBox .bar .javascript{width:80% ;background:white}
+.column.left .progressBox .bar .php{width:70% ;background:white}
+.column.left .progressBox .bar .python{width:75% ;background:white}
+.column.left .progressBox .bar .sql{width:50% ;background:white}
 .column.left .progressBox .bar .english{width:80% ;background:white}
-.column.left .progressBox .bar .git{width:40% ;background:white}
-.column.left .progressBox .bar .django{width:70% ;background:white}
+.column.left .progressBox .bar .git{width:50% ;background:white}
+.column.left .progressBox .bar .django{width:50% ;background:white}
 .column.right{color:#7D6D6E}
 .column.right .education,.experience,.interest{margin:0 22px 22px 0}
 .column.right .education{margin-top:22px}
