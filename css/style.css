@@ -1,0 +1,104 @@
+html{width:100%}
+body{width:100%;font-size:14px;font-family:Helvetica,arial;background:#EAE9E7}
+.wrapper{width:calc(100% - 48px);padding:24px 0}
+h1{margin-top:70px;font-size:36px;line-height: 36px}
+h2{font-size:18px}
+h3{margin-bottom:2px;font-size:14px}
+p{margin:0;}
+.column.left.desktop-4{padding-bottom: 20px}
+.education,.experience,.interest,.link{padding-top: 20px;padding-bottom: 20px}
+.column.small-3,.column.medium-2{padding-right: 0}
+.column.left.desktop-4{background:#5DA4DA;color:white;box-shadow:0px 1px 3px #7d6d6e}
+.column.left,.imageBoxEtAbout{padding-top:0}
+.column.left .imageBox{background-image:url('../img/1.JPG');background-size:cover;background-position: 33% 0}
+.column.left .imageBox .burger{padding-top:14px}
+.column.left .imageBox .burger a{padding-top:14px}
+.column.left .imageBox .burger .menu{display:none}
+.column.left .imageBox .burger:hover .menu{position:relative;z-index:10;width:200%;display:block;background:#5DA4DA}
+.column.left .menu li{text-align: left}
+.column.left .column.small-3{text-align:center}
+.column.left .blueBar{clear:both;margin:12px -10px 4px 0;border-bottom:1px solid #4285BC}
+.column.left strong{text-transform:uppercase;font-size:20px}
+.column.left i{font-size:24px}
+.column.left p{box-sizing:border-box;margin-top:0;line-height:20px;text-align:justify} 
+.column.left a{line-height: 24px;font-size:18px;color:white;text-decoration:none}
+.column.left a:hover{font-weight:bold}
+.column.left span{line-height: 24px;font-size:18px}
+.column.left .progressContainer{margin-top: 8px}
+.column.left .progressContainer .column.left{margin: 0 0px;padding: 0}
+.column.left .progressContainer .column.right{margin: 0 0px;padding: 0}
+.column.left .progressBox{margin:0 10px;}
+.column.left .progressBox .bar{width:100%;margin:12px 0;padding:0;background:#4285BC}
+.column.left .progressBox .titre{padding: 0;color:white}
+.column.left .progressBox .bar>div{position:relative;height:3px}
+.column.left .progressBox .bar>div i{position:absolute;right:0;top:-11px;color:white}
+.column.left .progressBox .bar .photoshop{width:50%;background:white}
+.column.left .progressBox .bar .html{width:90% ;background:white}
+.column.left .progressBox .bar .css{width:80% ;background:white}
+.column.left .progressBox .bar .javascript{width:20% ;background:white}
+.column.left .progressBox .bar .php{width:50% ;background:white}
+.column.left .progressBox .bar .python{width:70% ;background:white}
+.column.left .progressBox .bar .sql{width:40% ;background:white}
+.column.left .progressBox .bar .english{width:80% ;background:white}
+.column.left .progressBox .bar .git{width:40% ;background:white}
+.column.left .progressBox .bar .django{width:70% ;background:white}
+.column.right{color:#7D6D6E}
+.column.right .education,.experience,.interest{margin:0 22px 22px 0}
+.column.right .education{margin-top:22px}
+.column.right .column.medium-2.desktop-2{text-align:center}
+.column.right .row .desktop-12{background:white;box-shadow:0px 1px 3px #7d6d6e}
+.column.right .row .desktop-12 strong{color:#5DA4DA}
+.column.right .row .desktop-12 .row .desktop-2 i{font-size:34px}
+.column.right .row .desktop-12 .row .desktop-10 i{color:#5DA4DA;font-size: 24px;}
+.column.right .row .desktop-12 .row .desktop-10 h3 a i:hover{font-weight:bold}
+.column.right .row .desktop-12 .row .desktop-10 h3 a i{font-size:16px}
+.column.right .interest .column.medium-10.desktop-10{font-size:0}
+.column.right .interest .column.medium-10.desktop-10 h2{font-size:18px}
+.column.right .interest .iBox{display:inline-block;width:20%;font-size: 0px;text-align:center}
+.column.right .row .desktop-12.link .row .desktop-10 a:hover i{font-weight:bold}
+.column.right .linkedinAndViadeo{text-align:center}
+.column.right .linkedinAndViadeo a i{font-size:16px;color:#5DA4DA}
+.column.right .linkedinAndViadeo a:hover i{font-weight:bold}
+
+@media screen and (min-width:500px){
+	.column.left h1{font-size:28px}
+	.column.left p{margin-top:30px}
+	.column.left strong{font-size:12px}
+	.column.left .imageBox .small-9{min-height: 200px}
+	.column.left .column.center{text-align:center}  
+	.column.left a{text-align:center}
+}
+
+@media screen and (min-width:800px){
+	.wrapper{width:800px;padding:24px 0}
+	.column.left p{margin-top:0}
+	.column.left.desktop-4{width: calc(33.33333% - 20px);margin-right: 20px}
+	.column.left .column.center{text-align:left}
+	.column.left a{font-size:16px;text-align:left}
+	.column.right .education{margin-top:0}
+}
+
+/*@media print{
+	@page{margin:10%;} --> erreur W3C
+}*/
+
+/*@media print{ 
+	@page {margin:10%}
+	body {background-color :#fff}
+	.wrapper { 
+		width:799px;
+		margin :0;
+		padding: 0;
+		box-shadow:none;
+		border :none;
+	}
+	#banner, #menuright, #footer {display :none;}
+	h1#top { 
+		margin :0;
+		padding :0;
+		text-indent :0;
+		line-height :25pt;
+		font-size :25pt;
+	}
+	h2, h3, #contenu h3, #contenu a, a {color :#000}
+}*/
