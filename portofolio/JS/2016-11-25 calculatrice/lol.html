@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<title>lol</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+		<link href="css/font-awesome.css"  rel="stylesheet" type="text/css" />
+		<link href="css/grille.css" rel="stylesheet" type="text/css" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>	
+	<body>
+		<form id="form" action="">
+			<input type="text" id="field" />
+		</form>
+		<div id="down"></div>
+	</body>
+	<script type="text/javascript">
+		//console.log(String.fromCharCode(84,101,115,116)); // Affiche : Test
+		
+		var form = document.getElementById("form");
+		form.addEventListener('keydown', function(event)
+		{
+			//var lettre = String.fromCharCode(event.keyCode);
+			var lettre = event.key;
+			document.getElementById('down').innerHTML = lettre;
+			if(event.keyCode == 13)
+			{
+				event.preventDefault();
+				console.log('submit');
+				document.getElementById('down').innerHTML="ENTER";
+			}
+		});	
+		
+		
+		/*
+		
+			
+		
+		*/
+		
+		
+	</script>
+</html>

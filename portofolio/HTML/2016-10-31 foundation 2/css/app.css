@@ -1,0 +1,54 @@
+html{}
+body{font-family:arial}
+header .topBlueBar{height:24px;background:#16416C}
+header .menuBar{height:50px;position:relatif;background:#001D3D;color:white}
+header img{position:absolute;left:35px;top:8px;width:220px;height:80px;border:14px solid #001D3D;border-radius:28px}
+header ul{width:100%;float:left;line-height:50px;margin:0;background:#001D3D}
+header li{display:inline-block;font-size:14px}
+header li a{margin:0 42px 0 0;color:white}
+.intelligentBox .backgroundBox{height:366px;background-image:url('../img/water.jpg');background-size:cover}
+.intelligentBox h1{margin-top:28px;font-size:4rem;font-weight:bold;line-height:66px;color:#3B3B39}
+.intelligentBox .twoBox .column{padding:0} 
+header+.row .row{margin-right: -2.937rem}
+.intelligentBox .twoBox .imageBox{height:159px}
+.intelligentBox .twoBox .innovation img{width:100%;height:100%}
+.intelligentBox .twoBox .articleBox{height:183px}
+.intelligentBox .twoBox .innovation .titleBox{height:24px;background:#15406B;color:white}
+.intelligentBox .twoBox .innovation .titleBox h3{padding:0 15px;line-height:24px;font-size:14px;text-align:left}
+.intelligentBox .twoBox .articleBox{background:#001D3D}
+.intelligentBox .twoBox .articleBox h2{padding: 6px 15px 0;line-height:24px;font-size:24px;color:white}
+.intelligentBox .twoBox .articleBox p{padding:0 15px;line-height:18px;font-size:14px;color:#5C819C}
+.productBox {margin-top:24px}
+.productBox img{display:block;margin:auto}
+.productBox h3{margin:10px 0 30px;font-size:14px}
+.productBox h3 a{color:black}
+.productBox h3 a:hover{color:#1585cf}
+.siteEntry .title{height:26px;background:#001C3C;color:white}
+.siteEntry .title h2{margin:0;line-height:26px;font-size:14px}
+.siteEntry.small-up-2 .column{background-image:url('../img/star.JPG');}
+.siteEntry.small-up-2 .blueFilter{position:relative;height:160px;background:rgba(0,28,60,0.5)}
+.siteEntry.small-up-2 h3{display:block;width:140px;position:absolute;bottom:0;left:50%;margin-left:-70px;font-size:20px;color:white}
+.siteEntry.small-up-2 h3 a{color:white}
+.siteEntry.small-up-2 h3 a:hover{color:#1585cf}
+.brand h2{margin: 16px 0;font-size:14px;color:#031D3E}
+footer .topBlueBar{position:relative;margin-top:40px;background:#001D3D}
+footer .link{height:30px;background: #001D3D;color:white;}
+footer .iconBox{width:300px}
+footer .icon{display:inline-block;margin-left:10px}
+footer .icon i{line-height:30px;font-size:24px}
+footer .icon a{color:white}
+footer .icon a:hover{color:#1585cf}
+footer .leedBox{position:static;right:20px;top:-16px;width:280px;height:60px;background: #001D3D;border-radius:10px;color:white}
+footer .leedBox img{float:left;margin:10px 8px 0 16px}
+footer .leedBox p{margin:10px 8px;font-size:12px;line-height:12px}
+@media screen and (min-width: 64em) {
+	footer .topBlueBar{height:18px;background:#16416C}
+	header ul{width:75%;float:right}
+	footer .leedBox{position:absolute}
+}
+@media screen and (min-width: 75em) {
+	header ul{float:right}
+}
+@media screen and (min-width: 90em) {
+	header ul{float:right}
+}

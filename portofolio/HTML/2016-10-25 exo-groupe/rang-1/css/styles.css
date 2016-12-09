@@ -1,0 +1,377 @@
+/*** Header début ***/
+header .socialHeader{text-align:center;font-size:15px;color:#B3B4B9;line-height:45px;border-bottom:1px solid #EAEAEA}
+header .socialHeader a{color:#B3B4B9;}
+header .socialHeader .sm-7 span{color:black}
+header .socialHeader .sm-5, header .socialHeader .sm-7{padding:0;}
+header .socialHeader .sm-5 div{display:inline-block;padding:0 17px;border-right:1px solid #EAEAEA;border-top:1px solid #EAEAEA;border-left:1px solid #EAEAEA}
+header .contactHeader{text-align:center;font-size:13px;}
+header .contactHeader i{font-size:30px;color:#FC5F1C;margin-bottom:16px;border:1px solid #EAEAEA;border-radius:100%;line-height:60px;text-align:center;width:60px;height:60px}
+header .contactHeader .sm37{padding:32px 0}
+header .contactHeader .sm23{padding-left:15px;padding-right:15px;}
+header .contactHeader .sm23>div{margin-bottom:16px;}
+header .contactHeader .sm23>div span{color:#B3B4B9}
+header .contactHeader .sm23>div b{font-size:13px}
+header .contactHeader  .button{line-height:45px;padding-left:35px;padding-right:35px}
+header nav{background-color:#262F36;margin-top:35px;text-align:center}
+header nav i.fa, header nav div, header nav li{display:inline-block;}
+header nav>i.fa{background-color:#EB4A1C;margin:15px;padding:13px;font-size:17px;color:white;}
+header nav ul{display:none;}
+header nav li{margin:0 20px;font-size:13px;color:white;font-weight:bold;line-height:70px;}
+header nav a {color:white;}
+header nav .search{background-color:#2D3740}
+header nav .search input{width:105px;height:65px;padding:0 30px;background-color:#2D3740;border:none;color:white;}
+header nav .search i{margin:0 30px;color:white;font-size:17px}
+/*** Header fin ***/
+
+/*** Jumbotron + 3 blocks début ***/
+section>hr{height:5px;background-color:#ED6B30;border:none} /*barre de séparation juste avant le jumbotron */
+#jumbotron .col{background-image:url("../img/headerMenu2.jpg");background-position:center;background-size:auto 100%;background-repeat:no-repeat; height:235px;}
+#jumbotron .button{display:none}
+
+#jumboBlocks .col{padding:0}
+#jumboBlocks>div{height:310px;color:#FFF}
+#jumboBlocks>div:first-child{background-image:url("../img/headerMenu3.jpg");background-position:center;background-size:auto 100%;background-repeat:no-repeat}
+#jumboBlocks>div:nth-child(2){background-image:url("../img/headerMenu4.jpg");background-position:center;background-size:auto 100%;background-repeat:no-repeat}
+#jumboBlocks>div:nth-child(3){background-image:url("../img/headerMenu5.jpg");background-position:center;background-size:auto 100%;background-repeat:no-repeat}
+#jumboBlocks>div>div{background-color:rgba(237,95,31,0.9);height:100%}
+#jumboBlocks .blockMiddle{background-color:rgba(247,129,79,0.9)}
+#jumboBlocks i{border:5px solid white; padding:5px;margin-top: 60px;margin-bottom:15px;border-radius:50%;width:45px;height:45px;line-height:45px;font-size:32px}
+#jumboBlocks h2{font-size:18px;color:#FFF;margin-bottom:24px; margin-top:0}
+#jumboBlocks p{margin:0 20px 24px 20px}
+#jumboBlocks .button{background-color:transparent}
+/*** Jumbotron + 3 blocks fin ***/
+
+/*** Recent Causes début ***/
+.recent{color:#959B9B;margin:0 2%}
+.recent h2{font-size:26px}
+.recent h2, h3{color:black}
+.recent h3{font-size:16px;margin:7% 0}
+.recent p{text-align:center;font-size:18px;color:#959B9B}
+
+.recent .barWithCircle{position:relative;width:118px;height:0px;margin:26px auto 70px auto;border:1px solid #EAECEB} /* mettre à jour dans commun ? */
+.recent .barWithCircle div{position:absolute;left:50%;top:-9px;width:18px;margin-left:-9px;border:1px solid #EAECEB;border-radius:50%;text-align:center;line-height:18px} /* mettre à jour dans commun ? */
+
+.recent .articleBox{max-width: 356px; height:480px;margin:4% auto;border:6px solid #EAECEB}
+.recent .articleBox .imageAndPercent{position:relative}
+.recent .articleBox  img{width:100%}
+.recent .articleBox .percent{position:relative;left:50%;width:52px;height:52px;border:6px solid #E97A4C;border-radius:50%;text-align:center;line-height:52px;background:#F24B05;font-size:14px;color:#FFDCB3;margin:-34px 0 0 -26px}
+
+.recent .articleBox .underImage{margin:auto}
+.recent .underImage .raised, .goal{display:inline-block;font-size:14px;font-weight:bold}
+.recent .articleBox .underImage .goal{margin-left:14px;color:#F24B05}
+.recent .articleBox .underImage  p{margin-top:6px;line-height:20px;text-align:left;font-size:14px; margin-left: 20px; margin-right: 20px}
+.recent .articleBox .underImage  .button{box-sizing:border-box;padding:0 5px;height:36px;margin-top:25px;font-size:10px}
+.recent .articleBox .underImage  .button.one{margin-right:20px}
+.recent .articleBox .underImage  .button.two{background:white;border:2px solid #F24B05}
+.recent .articleBox .underImage  .button.two *{color:#F24B05}
+/*** Recent Causes fin ***/
+
+/*** Upcoming event début ***/
+.backgroundUpComingEvent #corpPage{padding-top:100px;max-width:1250px;margin-left:auto;margin-right:auto}
+.backgroundUpComingEvent .col{padding:0 15px; text-align: left} /*A FIXER 15PX PERMET D'ETRE OK SUR LES COTES */ 
+.backgroundUpComingEvent .resetPadding {padding:0}/*PERMET DE RESET LE PADDING DE LA LIGNE DU DESSUS */
+/*TITRE + FLECHE BUTTON + DOUBLE BORDURE */
+.backgroundUpComingEvent .row .titleUpComingEvent h3{font-size:16px;line-height:32px;margin:0}
+/* FLECHE BUTTON */
+.backgroundUpComingEvent .row .titleUpComingEvent{position:relative}
+.backgroundUpComingEvent .row .titleUpComingEvent .linkLeftRight{position:absolute;bottom:22px;right:11px}
+.backgroundUpComingEvent .row .titleUpComingEvent .linkLeftRight>a>i{display:inline-block;width:32px;height:32px;background:rgb(229,85,22);line-height:32px;text-align:center;color:white}
+/* DOUBLE BORDURE */
+.backgroundUpComingEvent .row .titleUpComingEvent .doubleBorder{min-height:1px;margin-bottom:22px;border-top:3px solid rgb(174,105,76);border-bottom:3px solid rgb(209,91,41);width:15%}
+/* IMAGE DE FOND + BOXDATE */
+.backgroundUpComingEvent .row .imgBackground{position:relative;background:url('../img/recentCause1mobile.jpg') no-repeat;background-size:100%;height:220px;text-align:center;color:white}
+/* BOXDATE */
+.backgroundUpComingEvent .row .imgBackground .boxDate{position:absolute;top:0;right:3px;height:77px;width:58px}
+.backgroundUpComingEvent .row .imgBackground .boxDateTop{background:rgb(235,83,16);height:45px;line-height:44px;font-size:20px}
+.backgroundUpComingEvent .row .imgBackground .boxDateBot{background:rgb(51,51,51);height:32px;line-height:30px;font-size:11px}
+/* TITRE PARAGRAPHE */
+.backgroundUpComingEvent .row .col h4{margin:15px 0 5px 0}
+.backgroundUpComingEvent .row .col h4 a{font-size:13px;text-decoration:none;color:black}
+.backgroundUpComingEvent .row .col span{font-size:12px}
+.backgroundUpComingEvent .row .col span .fa{color:rgb(235,83,16);font-size:12px}
+.backgroundUpComingEvent .row .col span .fa-map-marker{margin-left:10px}
+.backgroundUpComingEvent .row .col p{margin-top:12px;margin-bottom:28px;color:rgb(200,200,200);font-size:11px}
+/*** Upcoming event fin ***/
+
+/*** Save Children début ***/
+.saveChildren{box-sizing:border-box;padding-top:100px;height:452px;background:white}
+.saveChildren .centerBox{max-width:784px;margin:auto;padding:0 16px}
+.saveChildren .centerBox h2{margin-top:0}
+.saveChildren h2{font-size:24px}
+.saveChildren .barWithCircle{position:relative;width:118px;height:0px;margin:26px auto 36px auto;border:1px solid #F54907;color:#F54907} /* mettre à jour dans commun ? */
+.saveChildren .barWithCircle div{position:absolute;left:50%;top:-9px;width:18px;margin-left:-9px;border:1px solid #F54907;border-radius:50%;text-align:center;line-height:18px} /* mettre à jour dans commun ? */
+.saveChildren h3{margin-bottom:34px;font-size:30px;color:#F54907}
+.saveChildren p{margin-bottom:35px;color:#B6B6B6}
+.saveChildren .button{display:block;box-sizing:border-box}
+.saveChildren .button.one{width:159px;height:47px;margin:auto;line-height:46px;color:white;border:2px solid #F54907}
+.saveChildren .button.two{width:143px;height:42px;margin:auto;line-height:38px;color:#F54907;background:white;border:2px solid #F54907}
+/*** Save Children fin ***/
+
+/*** Our Gallery début ***/
+#pageOurGallery{min-width:320px;max-width:1250px;margin-left:auto;margin-right:auto;text-align:center;font-family:'Open Sans';}
+/* TITRE AVEC TEXTE EN DESSOUS , ROND AVEC LIGNE */
+#pageOurGallery .row .col h2{font-size:30px}
+#pageOurGallery .row .col span{font-size:18px;color:#877D7B}
+#pageOurGallery .row .col .fa-dot-circle-o{font-size:20px;color:#E6E6E6;margin-bottom:70px}
+#pageOurGallery .row .col .lineDot{display:inline-block;margin-bottom:6px;min-height:2px;width:50px;background:#E6E6E6}
+/* SECTION AVEC IMAGE */
+#pageOurGallery .row .col img{width:100%}
+#pageOurGallery .row .box4img{padding-left:1px;padding-right:1px}
+#pageOurGallery .row .box4img .col{padding:0 2px 0 2px}
+#pageOurGallery .row  .marginBoxImg{margin-top:-7px}
+/* SECTION ORANGE AVEC TXT+BUTTON */
+#pageOurGallery .row .backgroundOrange{background:rgb(235,83,16);color:white;margin-top:-4px;padding-bottom:60px;padding-top:28px}
+#pageOurGallery .row .col h3{font-size:30px;font-weight:normal;line-height:26px;margin-bottom:0}
+#pageOurGallery .row .col p{font-size:18px;margin-top:10px;margin-bottom:12px;padding-left:30px;padding-right:30px}
+#pageOurGallery .row .col a{display:inline-block;text-decoration:none;color:#335A59;font-size:12px;line-height:50px;padding-left:26px;padding-right:26px;border-radius:50px;background:white}
+/*** Our Gallery fin ***/
+
+/*** Our Mission début ***/
+.ourMission h2 {font-size:32px;margin-bottom: 14px;}
+.ourMission p {color:#70787B;}
+
+.ourMission .barWithCircle {position: relative; width: 118px; height: 0px; margin: 26px auto 56px auto; border:1px solid #70787B; color: #70787B} /* mettre à jour dans commun ? */
+.ourMission .barWithCircle div {position: absolute; left: 50%; top: -9px; width: 18px; margin-left: -9px; border: 1px solid #70787B; border-radius: 50%; text-align: center; line-height: 18px} /* mettre à jour dans commun ? */
+.ourMission .col.sm-4 {margin-bottom: 80px; padding: 0 16px;}
+.ourMission .col.sm-3 {margin-bottom: 26px;}
+.ourMission  h3 {font-size: 20px; font-weight: normal;}
+.ourMission p {line-height: 26px; margin-top: 10px; font-size: 14px;}
+.ourMission a {display: inline-block; color: #EB5310; margin-top: 10px;}
+/*** Our Mission fin ***/
+
+/*** Latest News début ***/
+.latest h2 {font-size:32px;margin-bottom: 14px;}
+.latest h3 {font-size: 20px;}
+.latest p {color: #6E8C97; line-height: 30px; margin: 16px 0;}
+.latest .barWithCircle {position: relative; width: 118px; height: 0px; margin: 26px auto 70px auto; border:1px solid #6E8C97; color: #6E8C97} /* mettre à jour dans commun ? */
+.latest .barWithCircle div {position: absolute; left: 50%; top: -9px; width: 18px; margin-left: -9px; border: 1px solid #6E8C97; border-radius: 50%; text-align: center; line-height: 18px} /* mettre à jour dans commun ? */
+
+.latest > .row {margin: 0 10%;}
+
+.latest .col.sm-4 {padding: 0 1.2%;}
+.latest img {width: 100%; height: 100%; margin-bottom: 27px;}
+
+.latest .col .sm-2 {color: white;}
+.latest .boxDateTop,.boxDateBot *{font-size: 20px;}
+.latest .boxDateTop {background: #EB5310; height: 70px; padding: 10%;}
+.latest .boxDateBot {background: white; height: 50px; line-height: 30px; font-size: 16px; color: black; border: 1px solid #6E8C97; padding: 10%;}
+.latest .boxDateBot * {font-size: 16px;}
+
+.latest .col.sm-10 {padding: 0 10%; text-align: left;}
+.latest a {display: block; color: #EB5310; margin-bottom: 50px;}
+
+@media screen and (min-width:48rem){	/*[> 48rem (>768px)]*/
+	.latest > .row {margin: 0;}
+}
+/*** Latest News fin ***/
+
+/*** Charity Début ***/
+.charity{height:500px;background-repeat:no-repeat;background-image:url("../img/charityEducation.jpg");background-position:center;background-size:100% 100%;background-size:100% 100%}
+.charity .whiteBackground{background-color:rgba(255,255,255,0.7);height:100%}
+.charity .row div{margin-top:75px}
+.charity .row div:first-child{padding-left:25px;padding-right:0}
+.charity .charityEd{margin-top:0 !important;text-align:justify;position:relative;background-color:#FFF;min-height:350px;margin-right:25px}
+.charity img{height:350px;width:100%}
+.charity h3{text-align:left;font-size:24px;text-transform:none;margin-bottom:30px}
+.charity h4{font-size:12px;color:#F24B05;margin-top:18px;margin-bottom:27px;padding-right:25px}
+.charity .button{margin-top:35px;width:auto;position:absolute;bottom:30px;left:25px}
+.charity .charityShare{position:absolute;bottom:30px;right:25px;width:auto;height:60px;font-weight:bold;font-size:12px;line-height:30px}
+.charity p{padding-right:25px}
+.charity span{padding-left:15px;color:#F24B05}
+.charity i{width:30px;height:30px;border-radius:50%;color:#F24B05;font-weight:bold;background-color:#FFF;border:1px solid grey;line-height:30px;text-align:center}
+/*** Charity fin ***/
+
+/*** Volunteers début ***/
+.meetVolunteers {text-align: left}
+.meetVolunteers .barWithCircle {position: relative; width: 118px; height: 0px; margin: 26px 0 56px 15px; border:1px solid #70787B; color: #70787B} /* mettre à jour dans commun ? */
+.meetVolunteers .barWithCircle div {position: absolute; left: 50%; top: -9px; width: 18px; margin-left: -9px; border: 1px solid #70787B; border-radius: 50%; text-align: center; line-height: 18px} /* mettre à jour dans commun ? */
+.meetVolunteers {margin: 0 15px;}
+.meetVolunteers i { color: white; background-color: #E95412; line-height: 45px; padding: 0 19px; font-size: 20px}
+.meetVolunteers h2 {margin-left: 15px; text-align: left; font-size: 25px; margin-bottom: 10px}
+.meetVolunteers p { font-size: 15px; color: #7E8689}
+.meetVolunteers .imageMOV {max-width: 306px; margin-bottom: 25px; margin-left: auto; margin-right: auto}
+.meetVolunteers img {width: 100%}
+.meetVolunteers>span {color: #F24B05}
+.meetVolunteers>hr {margin-top: 15px; margin-bottom: 15px}
+.meetVolunteers>a {background-color: white; color: black; border: 2px solid #E5E5E5; margin-top: 20px;}
+/*** Volunteers fin ***/
+
+/*** Testimonials début ***/
+.testimonials h2 {font-size: 28px;}
+.testimonials .barWithCircle {position: relative; width: 118px; height: 0px; margin: 26px auto 56px auto; border:1px solid #F35319; color: #F35319} /* mettre à jour dans commun ? */
+.testimonials .barWithCircle div {position: absolute; left: 50%; top: -9px; width: 18px; margin-left: -9px; border: 1px solid #F35319; border-radius: 50%; text-align: center; line-height: 18px} /* mettre à jour dans commun ? */
+.testimonials .guillemets {width: 66px; height: 66px; margin: 0 auto 24px; border: 1px solid #7B7B83; border-radius: 50%; color: #F35319; border: 1 px solid #F35319;}
+.testimonials .guillemets i {line-height: 66px; font-size: 20px; font-style: italic;}
+.testimonials p {margin: 0 16%; line-height: 24px;}
+.testimonials strong + p  {color: #7B7B83; font-size: 14px;}
+/*** Testimonials début ***/
+
+/*** Sponsors début ***/
+.sponsors {height: 135px; background-color: #EEEEEE}
+.sponsors .xs-hide-inline {display: none}
+.sponsors div img {width: 120px; margin-top: 32px}
+/*** Sponsors fin ***/
+
+/****** Footer début*****/
+#footer{background:#262F36;color:#C5C6C8; font-family:'Open Sans';padding-top:85px;text-align:left;}
+/** PADDING DES MES COLONES**/
+#footer .paddingLeft32{padding-left:30px;}
+#footer .paddingLeft32 .paddBot{padding-bottom:20px;}
+#footer .paddingLeft32 .paddBot2{padding-bottom:16px; text-align:left;}
+#footer .paddingLeft32 .paddBot3{padding-bottom:12px;}
+/****IMAGE + SOCIAL ICONE + TEL GPS EMAIL ****/
+#footer .row .col img{width:100%;}
+#footer .row .col p{font-size:14px;}
+#footer .row .col .txtFaContact{padding-left:14px; font-size:14px;}
+#footer .row .col .socialIcon{margin-top:28px;}
+#footer .row .col .socialIcon .fa{height : 30px;width : 30px;margin-right:3px; border :1px solid white; border-radius:50%;text-align :center; line-height:32px;}
+/****PAGES****/
+#footer .row .col h3{margin-top:0;color:white;margin-bottom:35px;}
+#footer .row .page ul{list-style-type:none;padding:0;font-size:12px;}
+#footer .row .page ul li{margin-bottom:20px;}
+/****NEWS****/
+#footer .row .news ul{list-style-image:url('img/tryUL2.png');margin-top:30px;padding-left:26px;text-align:left;}
+#footer .row .news ul li{margin-bottom:20px;}
+#footer .row .news ul li a{color:#C5C6C8;text-decoration:none;font-size:12px;}
+#footer .row .news ul li span{display:block; opacity:0.5;font-size:12px;}
+/****ContactFormulaire****/
+#footer .row .ContactForm input{display:block;width:calc(100% - 30px);margin-bottom:10px;line-height:44px; background:#2C353C; color:white; opacity:0.5; border:none;}
+#footer .row .ContactForm textarea{display:block;height:100px;margin-bottom:5px; width:calc(100% - 30px);margin-bottom:10px;line-height:44px; background:#2C353C; color:white; opacity:0.5; border:none;}
+#footer .row .ContactForm .send{background:#EB5310;opacity:1;font-weight:bold;}
+/****PARTIE "DESIGN BY"****/
+#footer .row .lastWord{text-align:center;line-height:54px;}
+#footer .row .lastWord span{font-size:12px;}
+#footer .row .lastWord strong{color : #E2580F; font-weight:normal;}
+#footer .row .lastWord a{text-decoration:none;}
+#footer .borderCol{border-top:1px solid rgba(17,21,24,0.5)}
+#footer .row .col .paddingAfterButton{padding-bottom:72px;}
+/****** Footer fin*****/
+
+@media screen and (min-width:48rem){	/*[> 48rem (>768px)]*/
+	/*** Header début ***/
+	header .socialHeader{text-align:left;padding-left:33px;padding-right:33px}
+	header .socialHeader .sm-5{text-align:right}
+	header .contactHeader>div{padding-top:35px}
+	header .contactHeader .sm37{padding:35px 33px 0 33px;text-align:left}
+	header .contactHeader .sm23>div{display:inline-block;text-align:left;margin-left:15px;width:60%}
+	header nav{margin-top:30px}
+	header nav>i.fa{display:none}
+	header nav ul{display:inline-block}
+	header nav .search{background-color:#2D3740;float:right;margin-right:35px}
+	/*Header class pourcentage*/
+	.sm23{width:23%}
+	.sm17{width:17%}
+	.sm37{width:37%}
+	/*** Header fin ***/
+
+	/*** Jumbotron + 3 blocks début ***/	
+	#jumbotron .col{background-image:url("../img/headerMenu1.jpg");background-position:center;background-size:auto auto;background-repeat:no-repeat; height:770px;text-align:left}
+	#jumbotron .button{display:inline-block;margin-top:30px;border-color:#F24B05}
+	#jumbotron>div>a{margin-left:40px}	
+	#jumbotron .learnMore {margin-left:30px;background-color:#FFF;color:#F24B05}
+	#jumbotron h1, #jumbotron p{color:#FFF;margin: 0 0 0 40px;text-transform:uppercase} 
+	#jumbotron h1{margin-top:250px;margin-bottom:15px}
+	#jumbotron .blackSpan{margin-bottom:15px}
+	#jumbotron span {padding-left:12px;padding-right:12px}
+	#jumbotron h1 span{background-color:#F24B05;padding-left:12px;padding-right:12px}
+	#jumbotron .blackSpan span{background-color:#262F36;font-weight:bold;font-size:37px}
+	#jumbotron .whiteSpan span{font-size:21px;background-color:#FFF;color:#F24B05;text-transform:capitalize}
+
+	#jumboBlocks{height:250px}
+	#jumboBlocks .col{height:250px}
+	#jumboBlocks > div {height:auto}
+	#jumboBlocks .row .col.sm-8>div{text-align:left;margin-left:15px}
+	#jumboBlocks h2{margin-bottom:24px;margin-top:60px;font-size:20px;padding-left:15px;text-align:left}
+	#jumboBlocks p{margin-left:0;font-size:13px;margin-bottom:15px;text-align:left;padding-left:15px}
+	#jumboBlocks .button{text-align:left;}
+	#jumboBlocks .row.sm-4{text-align:right}
+	#jumboBlocks .row .col.sm-4{text-align:right}
+	#jumboBlocks i{text-align:center}
+	/*** Jumbotron + 3 blocks fin ***/
+
+	/*** Recent Causes début ***/
+	.recent .articleBox{width:auto;height:420px;margin:4%}
+	.recent .articleBox .percent{left:26px}
+	.underImage .button.two{display:none}
+	.recent .articleBox .underImage{width:auto;min-width:180px;}
+	.recent .articleBox .underImage .goal{margin-left:4%}
+	/*** Recent Causes fin ***/
+
+	/*** Upcoming event début ***/
+	.backgroundUpComingEvent #corpPage{background:rgb(250,250,250)}
+	.backgroundUpComingEvent{background:rgb(250,250,250)}
+	.backgroundUpComingEvent .upComingEvent{padding-bottom:110px}
+	/*ON DEFINI BIEN NOS COLONES PRINCIPALES */
+	.backgroundUpComingEvent .col2Medium{min-height:450px;background:url('../img/upcomingEvents1.jpg') no-repeat;background-size:100% 100%}
+	.backgroundUpComingEvent .col3Top{height:221px;padding-right:10px;background:url('../img/upcomingEvents2.jpg') no-repeat;background-size:100% 100%;margin-bottom:8px}
+	.backgroundUpComingEvent .col3Bot{height:221px;background:url('../img/upcomingEvents3.jpg') no-repeat;background-size:100% 100%}
+	.backgroundUpComingEvent .colPaddingImgRight{min-height:450px;padding-left:10px}
+	.backgroundUpComingEvent .row .col .resetPaddingTitle{padding-left:9px} /**PADDING REDEFINI POUR UN RESULTAT MEILLEUR **/
+	/*ICI ON GERE LA MISE EN FORME DU H3 DU FONTAWESOME AINSI QUE DE LA BARRE*/
+	.backgroundUpComingEvent .row .col h3{font-size:32px;margin-top:-1px;margin-bottom:16px}
+	.backgroundUpComingEvent .row .col .fa-dot-circle-o{margin-bottom:20px;color:rgb(235,83,16)}
+	.backgroundUpComingEvent .row .col .barreTitle {display:inline-block;width:95px;min-height:2px;margin-bottom:5px;background-color:rgb(200,200,200)}
+	/*ICI ON GERE NOTRE BOX A GAUCHE DU TXT !  */
+	.backgroundUpComingEvent .row .col .boxDate{width:70px;height:90px;text-align:center;color:white;font-weight:bold}
+	.backgroundUpComingEvent .row .col .boxDateTop{width:70px;height:60px;background:rgb(235,83,16);line-height:60px;font-size:28px}
+	.backgroundUpComingEvent .row .col .boxDateBot{width:70px;height:30px;background:rgb(51,51,51);line-height:30px;font-size:12px}
+	/*ICI ON GERE LA MISE EN FORME DES PARAGRAPHES ET LEURS TITRES */
+	.backgroundUpComingEvent .row .col h4{margin-top:0;font-size:12px} 
+	.backgroundUpComingEvent .row .col p{color:rgb(200,200,200);font-size:13px;margin-bottom:0}
+	/*ICI ON GERE LES DIVS QUI SEPARENT NOS BLOCKS TXT */
+	.backgroundUpComingEvent .row .hrTxtSeparate{margin-bottom:17px;margin-top:17px;min-height:1px;background:black}
+	/*** Upcoming event fin ***/
+
+	/*** Save Children début ***/
+	.backgroundSaveChlidren{background:url(../img/headerMenu1.jpg);background-position:center}
+	.saveChildren{box-sizing:border-box;padding-top:100px;height:452px;background:rgba(255,255,255,0.9)}
+	.saveChildren .button{display:inline-block}
+	.saveChildren .button.two{height:47px;line-height:46px}
+	/*** Save Children fin ***/
+
+	/*** Our Gallery début ***/
+	/* Titre */
+	#pageOurGallery .row .paddingTop11{margin-top:11px}
+	#pageOurGallery .row .col h2{margin-bottom:5px}
+	/* SECTION AVEC IMAGE */
+	#pageOurGallery .row .col img{width:100%}
+	#pageOurGallery .row .box4img{padding-left:1px;padding-right:1px}
+	#pageOurGallery .row .box4img .row .col{padding:0 2px}
+	#pageOurGallery .row .box4img .row  .resetPadding{padding:0}
+	/* SECTION ORANGE AVEC TXT + BUTTON + ICONE */
+	#pageOurGallery .row .leftColPadding{padding-left:35px}
+	#pageOurGallery .row .col p{font-size:38px;margin-top:10px;margin-bottom:32px;text-align:left;line-height:46px}
+	#pageOurGallery .row .col a{display:block;color:rgb(235,83,16);margin-left:30px;font-size:12px;line-height:50px;width:170px;border-radius:50px;background:white;text-decoration:none}
+	#pageOurGallery .row .col .row .txtRightIcon .fa{border:3px solid white;border-radius:50%;height:96px;width:100px;line-height:102px;font-size:48px}
+	#pageOurGallery .row .col .count{font-size:14px;color:white} /*Ca c'est le texte sous les icones */
+	#pageOurGallery .row .col .count b{font-size:50px;font-weight:normal}
+	#pageOurGallery .row .backgroundOrange{padding-bottom:80px;padding-top:70px;} /*C'est le padding pour le bas de cette section*/
+	/*** Our Gallery fin ***/
+
+	/*** Our Mission début ***/
+	.ourMission .col.sm-4 {margin-bottom: 80px; padding: 0 16px; text-align: left;}
+	/*** Our Mission fin ***/
+	
+	
+	
+	/*** Testimonials début ***/
+	.latest > .row {margin: 0;}
+	/*** Testimonials fin ***/
+	
+	/*** Sponsors début ***/
+	.sponsors {height: 165px;}
+	.sponsors .xs-hide-inline {display: inline}
+	.sponsors div img {width: 165px; margin-top: 34px;}
+	/*** Sponsors fin ***/
+	
+	/****** FOOTER ******/
+		#footer{padding-top:83px;}
+	#footer .row .paddingLeftDesktop{padding-left:30px;}
+	/****PAGES****/
+	#footer .row .col h3{margin-top:0;}
+	/****NEWS****/
+	#footer .row .paddingRightCol3{padding-right:50px;}
+	/****DESIGN BY****/
+	#footer .row .lastWord span{font-size:14px;}
+}
+

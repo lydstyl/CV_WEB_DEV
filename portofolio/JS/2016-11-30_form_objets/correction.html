@@ -1,0 +1,56 @@
+<form id="form1">
+	<div><input type="text" placeholder="Nom" name="nom" data-regex="^([a-z]{1,})$" data-error="Nom invalide" data-good="Nom valide" /></div>
+	<div><input type="text" placeholder="Prénom" name="prenom" data-regex="^([a-z]{1,})$" data-error="Prénom invalide" data-good="Prenom valide" /></div>
+	<div><input type="text" placeholder="Code postal" name="code postal" data-regex="^([0-9]{5})$" data-error="Code postal invalide" data-good="Code postal valide" /></div>
+	<button>Valider</button>
+</form>
+
+<form id="form2">
+	<div><input type="text" placeholder="Nom" name="nom" data-regex="^([a-z]{1,})$" data-error="Nom invalide" data-good="Nom valide" /></div>
+	<div><input type="text" placeholder="Prénom" name="prenom" data-regex="^([a-z]{1,})$" data-error="Prénom invalide" data-good="Prenom valide" /></div>
+	<div><input type="text" placeholder="Code postal" name="code postal" data-regex="^([0-9]{5})$" data-error="Code postal invalide" data-good="Code postal valide" /></div>
+	<button>Valider</button>
+</form>
+
+<style type="text/css">
+	input[type="text"]{border:1px solid #CCC}
+</style>
+<script>
+var checkForm = function(options){
+	var $this = prototype = { 
+		initialize: function(){ 
+			var field = document.querySelectorAll(options.container+' [data-regex]');
+			for(var i=0, il=field.length; i<il; i++) field[i].addEventListener('blur', this.check);
+			return this;
+		},
+		check: function(elm){
+			elm = typeof(elm.target) != "undefined" ? elm.target : elm;
+			var res = new RegExp(elm.getAttribute('data-regex')).test(elm.value);
+			elm.style.border = "1px solid "+(res ? options.good : options.error);
+			return res;
+		}
+	}
+	return $this.initialize();
+}
+new checkForm({
+	container: '#form1',
+	error: 'red',
+	good: 'green'
+});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</script>
+<!--
+		elm.parentNode.removeChild();
+		var span = document.createElement('span')
+		span.innerHTML = elm.getAttribute('data-error')
+		elm.parentNode.appendChild(span);
+-->
+

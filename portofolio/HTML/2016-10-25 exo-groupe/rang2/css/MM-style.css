@@ -1,0 +1,65 @@
+
+body{min-width:320px;font-family:arial}
+h1{font-size:36px; font-weight: bold; background: black; color: white; display:inline; position: absolute;
+ bottom:400px;  width:calc(100%-80px); left:40px; padding:0 12px
+}
+h2{}
+h3{margin-top:75px;line-height:70px;font-size:24px;text-align:center} /* REcent Causes */
+h4{line-height:50px;font-size:12px;}/* exemple SPONSOR A CHILD TODAY */
+h5{line-height:65px;font-size:22px}/* Charity For Education */
+.sous-titre{font-size:16px;color:#778588;margin-bottom:20px} /* sous titre du h3 */
+.para-h4{font-size:16px;color:#b0b0b0}/* paragraphe sous les h4 et h5 */
+
+/* mireille */
+#MM-part1 .MM-background{min-height:315px; background:url(../images/image1-background-mobile.jpg) 50% 50% no-repeat;margin-left:auto; margin-right:auto}
+#MM-part1 .MM-trans1{min-height:315px; background:url(../images/image1-background-mobile.jpg) left 50% no-repeat; }
+#MM-part1 .MM-back-orange {min-height:315px; display:block; background:#EB6123; opacity:0.8; text-align:center;}
+#MM-part1 .MM-back-orange1{min-height:315px; display:block; background:#EB6123; opacity:0.5; text-align:center}
+
+
+#MM-part1 .fa-usd {line-height:; font-size: 38px; border: 3px solid white; color: white; border-radius:100%; width:50px; 
+text-align:center; height:50px; line-height:50px}
+#MM-part1 .fa-heartbeat {line-height:; font-size: 38px; border: 3px solid white; color: white; border-radius:100%; width:50px; 
+text-align:center; height:50px; line-height:50px;}
+#MM-part1 .fa-users {line-height:; font-size: 38px; border: 3px solid white; color: white; border-radius:100%; width:50px; 
+text-align:center; height:50px; line-height:50px;  text-align:center}
+#MM-part1 .MM-donation {font-size:20px; color:white}
+#MM-part1 .MM-Lorem{font-size:15px; color:white}
+#MM-part1 .MM-relative {position:relative;}
+#MM-part1  .MM-absolute {position:absolute; text-align:center; font-weight:bold; top:60px; left:0; padding-left:35px; padding-right:20px}
+#MM-part1 .MM-absolute a {border:2px solid white; text-decoration:none; color: white; width:136px; border-radius:50px; font-size:12px;
+ line-height:30px; height:30px; display:block; margin-left:auto; margin-right:auto; font-weight:bold}
+
+
+@media screen and (min-width:40rem){
+	
+#MM-part1 .MM-background{min-height:770px; background:url(../images/image1-background.jpg) 50% 50% no-repeat;position:relative}
+#MM-part1 .MM-trans1 { min-height:250px; }
+#MM-part1 .MM-back-orange {min-height:250px; display:block; background:#EB6123; opacity:0.85; width:100%; text-align:center}
+#MM-part1 .MM-back-orange1{min-height:250px; display:block; background:#EB6123; opacity:0.5; width:100%; text-align:center}
+#MM-part1 .h1-title p {position: absolute; background:#F24B05; color: white;  font-size:32px; top:28%;
+ display: inline; width:calc(100%-80px); left:40px; padding:0 12px}
+
+#MM-part1 .orange-title p {display:inline; color: #F24B05; background:white; font-size: 22px; width:calc(100%-80px); left:40px; top:44%; position: absolute; padding:0 12px}
+#MM-part1 .MM-button-orange {margin-top:color:white; border-radius:50px; line-height:46px; width:calc(100%-80px); left:40px; bottom:41%;
+display:inline;padding:; background:#F24B05; width:153px; position:absolute; }
+#MM-part1 .MM-button-orange a {text-decoration:none; color: white; font-size:14px; font-weight:bold; }
+#MM-part1 .row .MM-button-orange{ text-align:center}
+#MM-part1 .row .MM-button-orange1{ text-align:center}
+#MM-part1 .MM-button-orange1 {margin-top:color:white; border-radius:50px; line-height:40px; width:calc(100% - 224px); left:224px; bottom:41%;
+display:inline;padding:; border:2px solid #F24B05; width:153px; position:absolute; background:white}
+#MM-part1 .MM-button-orange1 a {text-decoration:none; color:#F24B05; font-size:14px; font-weight:bold; }
+#MM-part1 .MM-donation {font-size:20px; color:white}
+#MM-part1 .MM-Lorem{font-size:15px; color:white}
+	
+#MM-part1 .fa-usd {line-height:; font-size: 38px; border: 3px solid white; color: white; border-radius:100%; width:50px; 
+text-align:center; height:50px; line-height:50px;  position:absolute;  left:-36px; top:24px}
+#MM-part1 .fa-heartbeat {line-height:; font-size: 38px; border: 3px solid white; color: white; border-radius:100%; width:50px; 
+text-align:center; height:50px; line-height:50px; position:absolute;  left:-36px; top:24px}
+#MM-part1 .fa-users {line-height:; font-size: 38px; border: 3px solid white; color: white; border-radius:100%; width:50px; 
+text-align:center; height:50px; line-height:50px;  text-align:center; position:absolute; left:-36px; top:24px}	
+#MM-part1  .MM-absolute {position:absolute; text-align:left; font-weight:bold; top:60px; left:0; left:90px; width:calc(100% - 90px); }
+#MM-part1 .MM-absolute a {border:2px solid white; text-decoration:none; color: white; width:136px; border-radius:50px; font-size:12px;
+ line-height:30px; height:30px;  font-weight:bold; text-align:center; margin:0;left:120px; right:120px}
+
+}

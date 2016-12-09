@@ -1,0 +1,11 @@
+body{min-width:360px;max-width:1250px;margin:0 auto;font-family:arial}
+h1{}
+h2{}
+h3{margin-top:75px;line-height:70px;font-size:24px;text-align:center} /* REcent Causes */
+h4{line-height:50px;font-size:12px;}/* exemple SPONSOR A CHILD TODAY */
+h5{line-height:65px;font-size:22px}/* Charity For Education */
+.sous-titre{font-size:16px;color:#778588;margin-bottom:20px} /* sous titre du h3 */
+.para-h4{font-size:16px;color:#b0b0b0}/* paragraphe sous les h4 et h5 */
+@media screen and (min-width:40rem){
+
+}

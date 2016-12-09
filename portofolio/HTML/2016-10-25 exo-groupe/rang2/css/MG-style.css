@@ -1,0 +1,125 @@
+body{min-width:360px;font-family:arial}
+h1{}
+h2{}
+h3{margin-top:75px;line-height:70px;font-size:24px;text-align:center} /* REcent Causes */
+h4{line-height:50px;font-size:12px;}/* exemple SPONSOR A CHILD TODAY */
+h5{line-height:65px;font-size:22px}/* Charity For Education */
+.sous-titre{font-size:16px;color:#778588;margin-bottom:20px} /* sous titre du h3 */
+.para-h4{font-size:16px;color:#b0b0b0}/* paragraphe sous les h4 et h5 */
+.MG-divgreybarcentral{font-size:0; display:block;}
+.MG-nopadding{padding:0}
+.MG-alignright{text-align:right}
+
+#MG-blockcenter{max-width:1250px; margin-left:auto; margin-right:auto}
+
+/* BLOC UPCOMING EVENT */
+/* DEBUT SMARTPHONE */
+#MG-upcoming h3{font-size:18px; margin:0; text-align:left; line-height:24px} /* Hauteur de texte =15px ! Le font size est à 20px à cause de la police Arial ~ +3px */
+.MG-upcoming-box-crochet{display:inline-block; width:30px; height:30px; background-color:#EE540A; line-height:30px; color:white; text-align:center; margin-bottom:20px}
+.MG-textalignright{text-align:right}
+.MG-orange-line{width:50px; height:2px; background-color:#EE540A; margin-bottom:1px;}
+#MG-upcoming strong{font-size:15px; line-height:30px}
+.MG-clock-adress{font-size:13px; margin-bottom:}
+.MG-clock-adress .fa-clock-o{color:#EE540A;}
+.MG-clock-adress .fa-map-marker{color:#EE540A; margin-left:10px}
+.MG-clock-adress > span{color:grey; font-size:12px}
+#MG-upcoming .para-h4{margin-bottom:32px}
+.MG-img-upcoming{position:relative}
+.MG-img-upcoming-absolute{position:absolute; right:0; top:0}
+.MG-box1-in-absolute{display:block; width:55px; height:45px; background-color:#EE540A; line-height:45px; text-align:center; color:white; font-size:22px}
+.MG-box2-in-absolute{display:block; width:55px; height:30px; background-color:#323232; line-height:30px; text-align:center; color:white; font-size:13px; font-weight:bold}
+/* END SMARTPHONE */
+
+/* DESKTOP */
+.MG-nomargin{margin:0 !important}
+.MG-margin10px{margin-bottom:10px}
+/* Left column */
+#MG-upcoming-desk {background-color:#FAFAFA}
+#MG-upcoming-desk h3{text-align:left; margin-bottom:0}
+.MG-grey-bar .fa-dot-circle-o{position:absolute; font-size:18px; left:-15px; top:-9px; color:#EE540A; left:-13px; }
+.MG-grey-bar{position:relative; width:90px; height:2px; background-color:#DBDBDB; margin-left:13px; margin-bottom:35px}
+.MG-box1-desk{display:block; width:70px; height:60px; background-color:#EE540A; line-height:60px; text-align:center; color:white; font-size:28px; font-weight:bold}
+.MG-box2-desk{display:block; width:70px; height:30px; background-color:#323232; line-height:30px; text-align:center; color:white; font-size:12px; font-weight:bold}
+.MG-divcalender{display:inline-block; height:90px; vertical-align:top; margin-right:30px}
+.MG-inline-block{display:inline-block; width:calc(100% - 130px); height:90px;}
+.MG-inline-block strong{font-size:15px; margin-bottom:10px; display:inline-block}
+.MG-inline-block p{font-size:15px; color:grey}
+.MG-img-upcoming-absolute > span{color:grey; font-size:12px}
+#MG-longgreybar{max-width:575px; height:2px; background-color:#DBDBDB; margin-bottom:17px; margin-top:18px}
+/* Right column */
+#MG-upcoming-rowphotos{margin-top:105px; margin-bottom:100px}
+.MG-nomargin img{display:block}
+/* END DESKTOP */
+/* END BLOCK UPCOMING EVENT */
+
+/* DEBUT BLOCK OUR MISSION */
+#MG-ourmission h3{margin-bottom:0; padding:0; font-size:32px}
+#MG-ourmission .para-h4{margin-top:0; margin-bottom:30}
+#MG-ourmission{text-align:center}
+#MG-ourmission .para-h4{color:#796E76;}
+.MG-grey-bar-center-right .fa-dot-circle-o{position:absolute; font-size:18px; left:-15px; top:-9px; color:#DBDBDB;}
+.MG-grey-bar-center-left{display:inline-block; position:relative; width:50px; height:2px; background-color:#DBDBDB; margin-bottom:35px;}
+.MG-grey-bar-center-right{display:inline-block; position:relative; width:50px; height:2px; background-color:#DBDBDB; margin-left:13px; margin-bottom:35px;}
+.img-orange-background{width:65px; height:65px; margin-bottom:22px}
+#MG-top-3block h4{font-size:22px; font-weight:normal; margin-top:0; margin-bottom:18px; line-height:18px}
+#MG-top-3block p{margin-top:0px; font-size:16px; color:#BABABA; line-height:28px}
+.MG-width-top-3-block{width:calc(100% - 30px); display:inline-block; vertical-align:top;}
+.MG-readmore{color:#EC5B1C; font-weight:bold; font-size:14px; text-decoration:none}
+.MG-margintop85{margin-top:85px}
+.MG-marginbottom85{margin-bottom:85px}
+/* END BLOCK OUR MISSION */
+
+/* START BLOCK MARKS */
+#marks{width:100%; background-color:#EEEEEE; text-align:center; padding-top:55px; padding-bottom:55px}
+/* END BLOCK MARKS */
+
+/* START BLOCK "Meet our volunteers"  ONLY SMARTPHONE*/
+#volunteers{text-align:left; padding-left:15px; padding-right:15px}
+#MG-meetourvolunteers {padding:0}
+#volunteers h3{text-align:left; font-size:32px; line-height:35px; margin-bottom:18px}
+#volunteers .para-h4{color:#919191; margin-bottom:15px; margin-top:0px}
+.MG-upcoming-box-crochet-size45{display:inline-block; width:45px; height:45px; background-color:#EE540A; line-height:45px; color:white; text-align:center; margin-bottom:20px}
+.MG-divgreybarcentral  .MG-grey-bar-center-left{margin-bottom:77px}
+.MG-divgreybarcentral .MG-grey-bar-center-right{margin-bottom:77px}
+#volunteers + .MG-divgreybarcentral{margin-left:13px; margin-bottom:78px}
+.MG-longgreybar{background-color:#B6B6B4; width:100%; height:2px; margin:20px 0}
+.MG-redtext{color:#A8705F;}
+#volunteers .row .column b{margin-top:16px; margin-bottom:5px; display:inline-block}
+#MG-viewprofile{display:inline-block; border:2px solid #E6E6E6; color:black; border-radius:60px; font-weight:bold; font-size:12px;}
+div #MG-viewprofile{line-height:36px; padding-left:25px; padding-right:25px; height:34px;}
+/* END BLOCK "Meet our volunteers" ONLY SMARTPHONE */
+
+/* START BLOCK "Testimonials" ONLY SMARTPHONE */
+#MG-testimonials{text-align:center; margin-bottom:180px}
+.MG-divorangebarcentral{font-size:0;}
+#MG-testimonials h3{margin-top:150px; font-size:30px; margin-bottom:5px}
+.MG-orange-bar-center-right .fa-dot-circle-o{position:absolute; font-size:18px; left:-15px; top:-9px; color:#D05E2C;}
+.MG-orange-bar-center-left{display:inline-block; position:relative; width:50px; height:2px; background-color:#D05E2C; margin-bottom:75px}
+.MG-orange-bar-center-right{display:inline-block; position:relative; width:50px; height:2px; background-color:#D05E2C; margin-left:13px; margin-bottom:75px}
+#MG-quotation{border: 2px solid #E6E6E6; border-radius:50%; height:60px; width:60px; display:inline-block; text-align:center}
+#MG-quotation .fa-quote-left{color:#D05E2C; font-size:25px; line-height:60px; font-size:22px}
+#MG-testimonials p{line-height:25px; padding-left:70px; padding-right:70px}
+#MG-testimonials strong{font-size:14px;}
+#MG-testimonials .para-h4{font-size:14px; color:#919191; margin-top:10px}
+#MG-orangecircle{display:inline-block; font-size:0}
+.MG-orangecircle10px{width:6px; height:6px; border:2px solid #D05E2C; border-radius:50%; display:inline-block; margin-left:15px; margin-top:110px}
+.MG-orangecircle10px-1{width:6px; height:6px; border:2px solid #D05E2C; border-radius:50%; display:inline-block;}
+.MG-orangecircle10px-5{width:10px; height:10px; background-color:#D05E2C; border-radius:50%; display:inline-block; margin-left:15px}
+/* END BLOCK "Testimonials" ONLY SMARTPHONE */
+
+
+
+
+@media screen and (max-width:40rem) {
+	
+	#MG-top-3block{text-align:center}
+	.MG-margintop40-for-small{margin-top:40px}
+	#marks{padding-top:40px; padding-bottom:40px; width:100%}
+	#marks img{width:50%; height:50%}
+
+	
+}
+
+
+
+

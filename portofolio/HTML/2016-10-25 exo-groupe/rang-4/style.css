@@ -1,0 +1,846 @@
+/* css générique */
+body{
+	font-family:arial;
+	min-width:320px;
+	background-color:grey;
+}
+*{margin:0;padding:0}
+
+.content{
+	max-width:80rem;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:white;
+}
+.text-orange{
+	color:#EB5310;
+}
+.background-orange{
+	background-color:#EB5310;
+	color:white;
+}
+.background-black{
+	background-color:black;
+	color:white;
+}
+.background-white{
+	background-color:white;
+	color:#F37A43;
+}
+.background-white-orange{
+	background-color:white;
+	color:#EB5310;
+}
+a{
+	text-decoration:none;
+}
+ul{
+	list-style:none;
+}
+
+h2{
+	text-align:center;
+}
+.textundertitle{
+	text-align:center;
+	color:black;
+	margin-bottom:25px;
+}
+.traitundertitle{
+	width:120px;
+	height:15px;
+	margin-left:auto;
+	margin-right:auto;
+	line-height:5px;
+	margin-bottom:30px;
+}
+.traitundertitle .fa{
+	color:grey;
+}
+.traitundertitle .firsttrait{
+	width:50px;
+	height:2px;
+	display:inline-block;
+	background-color:grey;
+	margin-bottom:5px;
+}
+.firsttrait.orange{
+	background-color:#EB5310;
+}
+.fa-dot-circle-o.orange{
+	color:#EB5310;
+}
+.fa.orange{
+color:#EB5310;
+}
+
+.visual .trait{height:5px;width:100%;background-color:#EB5310}
+.visual .photo{position:relative;font-size:0}
+.visual .photo img{width:100%;max-width:1280px;min-width:320px;max-height:770px;min-height:240px}
+.visual .greatTitle{font-size:36px;text-transform:uppercase;height:55px;line-height:55px;padding-left:5px;padding-right:5px;box-sizing:border-box;position:absolute;top:calc(40% - 55px);left:40px}
+.visual h1{height:55px;line-height:55px;font-size:36px;font-weight:bold;text-transform:uppercase;background-color:black;color:white;position:absolute;left:40px;top:calc(50% - 55px);padding-left:5px;padding-right:5px;box-sizing:border-box;}
+.visual .littleTitle{font-size:28px;height:55px;line-height:55px;padding-left:5px;padding-right:5px;box-sizing:border-box;position:absolute;top:calc(65% - 45px);left:40px}
+.visual .buttonDonate{font-weight:bold;font-size:14px;line-height:45px;text-align:center;width:150px;height:45px;border-radius:20px;position:absolute;left:40px;top:calc(82% - 45px)}
+.visual .buttonDonate a{color:white;text-decoration:none}
+.visual .buttonLearn{font-weight:bold;font-size:14px;line-height:45px;text-align:center;width:150px;height:45px;border-radius:20px;position:absolute;left:225px;top:calc(82% - 45px);border:2px solid #EB5310}
+.visual .buttonLearn a{color:#EB5310;text-decoration:none}
+.visual .block-tree{max-width:80rem}
+.visual .block{padding:55px;box-sizing:border-box;text-align:center}
+.visual .block-mid{background-color:#Ff7734}
+.visual .icon{padding:0;margin-left:calc(50% - 27.5px);margin-bottom:10px;width:55px;height:55px;border:white 2px solid;border-radius:50%}
+.visual .icon span{width:55px;height:55px;font-size:30px;line-height:55px;text-align:center;margin:-2px}
+.visual .title{font-size:18px;padding-bottom:20px;box-sizing:border-box}
+.visual .text{font-size:14px;padding-bottom:25px;box-sizing:border-box;margin-left:-30px;margin-right:-30px}
+.visual .button{border-radius:20px;border:white solid 2px;width:130px;padding-bottom:10px;padding-top:10px;box-sizing:border-box;margin-left:calc(50% - 65px)}
+.visual .button a{color:white;text-decoration:none}
+
+.save{text-align:center;padding:130px 15px 80px 15px;box-sizing:border-box;background-color:#EEEEEE}
+.save h2{font-size:24px}
+.save .title{font-size:26px;font-weight:bold;color:#EB5310;margin-top:0px}
+.save .text{color:grey;font-size:14px;margin-top:40px;margin-bottom:35px}
+.save .buttonDonate{line-height:45px;width:150px;height:45px;border-radius:20px;border:2px solid #EB5310;margin-left:calc(50% - 75px)}
+.save .buttonDonate a{color:white;text-decoration:none}
+.save .buttonRead{line-height:45px;width:140px;height:45px;border-radius:20px;border:2px solid #EB5310;margin-left:calc(50% - 70px)}
+.save .buttonRead a{color:#EB5310;text-decoration:none}
+
+.meet{margin-top:90px;padding-left:15px;padding-right:15px;box-sizing:border-box}
+.meet h2{text-align:left;width:50%}
+.meet .text div{padding:0}
+.meet .textinfo{margin-bottom:20px}
+.meet .text .link{text-align:center;width:45px;height:45px;line-height:45px;margin-left:9px;margin-right:5px}
+.meet .text .link2{text-align:center;width:45px;height:45px;line-height:45px;margin-left:10px}
+.meet .text .link a{color:white}
+.meet .text .link2 a{color:white}
+.meet .traitundertitle{margin-left:0;margin-bottom:65px}
+.meet img{width:100%;max-height:350px}
+.meet .name{margin-top:30px;font-weight:bold;font-size:18px}
+.meet .job{color:#EB5310;font-size:14px}
+.meet .trait{background-color:grey;width:100%;height:1px;margin-top:15px;margin-bottom:15px}
+.meet .info{margin-bottom:15px;color:grey}
+.meet .button{border:1px grey solid;width:130px;height:35px;line-height:35px;border-radius:20px;text-align:center;margin-bottom:180px}
+.meet .button a{color:black;text-decoration:none;text-transform:uppercase;font-size:12px;font-weight:bold}
+
+.news {padding:90px 15px 90px 15px;box-sizing:border-box;text-align:center}
+.news .traitundertitle{margin-bottom:70px}
+.news .content{padding-left:15px;padding-right:15px;box-sizing:border-box}
+.news .text{margin-top:25px;margin-bottom:45px}
+.news img{width:100%;max-height:280px}
+.news .title{color:grey;margin-bottom:30px}
+.news .date{width:65px;height:70px;font-size:24px;font-weight:bold;text-transform:uppercase;padding-top:10px;box-sizing:border-box}
+.news .date2{font-size:16px;font-weight:normal}
+.news .comment{width:63px;border:1px #BBBBBB solid;height:50px;line-height:50px}
+.news .info{text-align:left;padding-left:15px}
+.news .info p:first-child{font-weight:bold;font-size:18px;text-transform:uppercase;margin-top:0}
+.news .info .link{margin-bottom:0}
+.news .info .link a{color:#EB5310;text-decoration:none}
+
+.ourGallery{text-align:center;width:100%;margin-top:80px}
+.ourGallery h2{font-size:24px}
+.ourGallery .sousTitre{color:grey;margin-bottom:35px}
+.ourGallery .photo{overflow:hidden;padding-bottom:1px;margin:0;max-width:80rem;font-size:0}
+.ourGallery #firstGallery{margin-top:80px}
+.ourGallery .photoInt{padding:0px 1px 0px 1px;box-sizing:border-box}
+.ourGallery img{width:100%;height:100%}
+.ourGallery .bonusMobile{padding:55px 20px 20px 20px;box-sizing:border-box}
+.ourGallery .bonusMobile .titreGallery{font-size:25px;margin-bottom:20px}
+.ourGallery .bonusMobile .buttonGallery{background-color:white;text-transform:uppercase;width:170px;height:45px;margin:25px auto 65px auto;border-radius:20px;line-height:45px}
+.ourGallery .bonusMobile .buttonGallery a{text-decoration:none;color:black;font-weight:bold;font-size:14px}
+
+.endGallery{padding:85px 35px 50px 35px;text-align:center;box-sizing:border-box;text-align:center;max-width:1280px;min-width:320px;width:100%;margin-right:auto;margin-left:auto}
+.endGallery .titleEndGallery{font-size:26px;padding-bottom:30px}
+.endGallery .titleEndGallery b{font-size:30px;vertical-align:top}
+.endGallery .buttonEndGallery{width:170px;height:40px;line-height:40px;border-radius:20px;background-color:white;margin:0 auto 70px auto;font-size:12px}
+.endGallery .buttonEndGallery a{text-decoration:none;color:#EB5310;text-transform:uppercase;font-weight:bold}
+.endGallery .iconEndGallery span{width:95px;height:95px;border:2px white solid;border-radius:50%;font-size:55px;line-height:95px}
+.endGallery .numbEndGallery{margin-bottom:20px;margin-top:20px;font-size:40px}
+.endGallery .infoEndGallery{margin-bottom:35px;text-transform:uppercase;font-size:12px;font-weight:bold}
+
+.header.row{text-align:center;background:white;box-sizing:border-box}
+.header.row .compagny{padding-bottom:17px;padding-top:17px;box-sizing:border-box}
+.header.row span:first-child{display:inline-block;font-size:14px;font-weight:normal;color:black}
+.mail{font-size:14px;color:rgb(166,163,180)}
+
+.header.row .colonne_logo{border-bottom:1px rgb(234,234,234) solid}
+.header.row div.logo{font-size:0}
+.header.row div.logo div{display:inline-block;width:39px;height:48px;border-top:1px rgb(234,234,234) solid;border-right:1px rgb(234,234,234) solid;box-sizing:border-box;vertical-align:bottom}
+.header.row div.logo div:first-child{border-left:1px rgb(234,234,234) solid}
+.header.row div.logo i{font-size:15px;color:rgb(166,163,180);line-height:48px}
+
+
+.header .contact.row{padding-top:43px;padding-bottom:35px;background:white;font-size:0;box-sizing:border-box}
+.header .contact.row .charity{text-align:center;/*box-sizing:border-box*/}
+.header .contact.row .charity img{display:inline-block;width:65px;margin-right:7px}
+.header .contact.row .charity .colonne_droite{display:inline-block;width:220px;text-align:left;vertical-align:top}
+.header .contact.row .charity .colonne_droite b{font-size:29px}
+.header .contact.row .charity .colonne_droite b:first-child{color:black}
+.header .contact.row .charity .colonne_droite b.home{color:#EB5310;font-weight:normal}
+.header .contact.row .charity .colonne_droite span{display:inline-block;color:#EB5310;font-size:13px;font-weight:bold;line-height:28px}
+
+.header .contact.row .colonne_contact{text-align:center;margin-top:31px}
+.header .contact.row .colonne_contact div{margin-top:17px;line-height:20px}
+.header .contact.row .colonne_contact i{display:inline-block;width:62px;height:62px;font-size:33px;line-height:59px;color:#EB5310;
+	border:1px rgb(234,234,234) solid;border-radius:50%}
+.header .contact.row .colonne_contact div b{display:block;margin:0;color:black;font-size:12px}
+.header .contact.row .colonne_contact div span{display:block}
+.header .contact.row .colonne_contact div b.number{color:black;font-size:18px;font-weight:normal;line-height:20px}
+.header .contact.row .colonne_contact span.espace{display:none}
+
+.header .contact.row .donate{text-align:center;margin-top:45px}
+.header .contact.row .donate a{display:inline-block;width:157px;height:45px;background:#EB5310;border-radius:30px;line-height:45px;text-decoration:none;
+	font-size:12px;color:white;font-weight:bold}
+
+
+.header .search.row{height:70px;background-color:rgb(37,46,61);padding-right:16px;box-sizing:border-box}
+.header .search.row .colonne_carre{padding-left:16px;padding-right:30px;width:87px}
+.header .search.row div.carre_image{position:relative;width:40px;height:40px;background:url('images/carre_orange.jpg');
+	margin-top:14px;margin-left:0px;margin-right:0px;text-align:center;box-sizing;border-box}
+.header .search.row div.carre_image i{color:white;line-height:40px;}
+
+.header .search.row div:first-child{position:relative}
+.header .search.row ul.menu_deroulant{display:none;position:absolute;top:0;background:#EB5310;list-style-type:none;z-index:50}
+.header .search.row ul.menu_deroulant li{text-align:left;padding:8px}
+.header .search.row ul.menu_deroulant li a{color:white;font-weight:bold;font-size:8px;text-decoration:none}
+
+.header div.carre_image:hover ul.menu_deroulant{display:list-item}
+
+.header .search.row .colonne_formulaire{padding-left:0;padding-right:0;}
+.header .search.row form.formulaire{position:relative;width:260px;height:64px;margin-top:6px;padding-left:10%;background-color:rgb(45,55,64);
+padding-right:0;border:0;line-height:64px;float:right;box-sizing:border-box}
+.header .search.row form.formulaire input{display:inline-block;width:100px;font-size:14px;font-weight:normal;color:gray;background-color:rgb(45,55,64);border:0}
+.header .search.row form.formulaire i{display:inline;position:absolute;top:27px;right:11%;color:gray;font-size:12px;font-weight:bold}
+
+.charity {background-color: #ffffee; padding:30px;}
+.charity .title{font-size:16px; font-weight:bold; margin-top:60px}
+.charity .marge-neg{margin-left:calc(-0.9375rem * 2) ; margin-right: calc(-0.9375rem * 2);}
+.charity  .trait-orange{background-color:#eb5310; width:45px;  height:2px; margin:2px;}
+.charity .block-image{position:relative; padding:20px 0px 0px 0px;text-align:center;}
+.charity .block-image img{width: 100%; max-height:390px;} /* display:block suppr */
+
+
+
+
+.charity .block-line{ background-color:white;}
+.charity .block-text{padding:20px 35px 30px 35px ;}
+.charity .block-text p.text{font-size:15px;}
+.charity .block-text .grey{display:inline; padding-right:16px; font-size:15px; color:grey;}
+.charity .block-text .orange{display:inline; font-size:15px; color:orange}
+
+.charity  .block-goal{position:absolute; bottom:0; left:0;/* padding-top:30px;*/padding:20px 10px 0px 10px; 
+					 background-color:rgba(255, 255, 255, 0.5); width:100%; height:25%;box-sizing: border-box;}
+
+.charity .block-goal .grey{float:left; padding-top:30px;padding-right:16px; font-size:15px; font-weight:bold; color:grey; opacity:1;}
+.charity .block-goal .orange{float:right;padding-top:30px; font-size:15px; color:#eb5310;  font-weight:bold; opacity:1;}
+.clear{clear:both}
+
+.charity .block-goal  .bar1{position:absolute; left:10px; top:20%; width:83%; height:8%; 
+						   background-color:#eb5310;border-radius:20px; border: 2px solid #eb5310}				   
+.charity .block-goal  .bar2{position:absolute; right:10px; top:20%; width:13%; height:8%;
+						  background-color:#ccc;border-radius:20px; opacity:1; border: 2px solid grey}
+.charity .block-goal .puce-pourcent{position:absolute; left:83%; top:11%; width:25px; height:25px; 
+								   background-color:#eb5310; border-radius:100%; border: 2px solid white;
+								   font-size:12px; font-weight: bold; color:white; text-align:center;
+								   line-height:24px; z-index:10}
+
+.charity .help{padding-bottom:25px;}
+.charity .help a.orange{background:#eb5310; left:0px; text-decoration:none;color:white; 
+	            font-size:10px; font-weight:bold; border-radius: 20px; height:30px; line-height:30px;
+	            display:inline-block;letter-spacing:2px;padding:0 10px;
+	        	border: 2px solid #eb5310}
+
+.charity .help a.white{background:#fff; left:0px; text-decoration:none;color:#eb5310; 
+	            font-size:10px; font-weight:bold; border-radius: 20px; height:30px; line-height:30px;
+	            display:inline-block;letter-spacing:2px;padding:0 10px;
+	            border: 2px solid #eb5310}
+
+.charity .social-networks{}
+.charity  .social-networks .puce{width:10px; height:10px; margin:5px; padding:10px;font-size:14px; color:#eb5310 ;border: 1px solid #aaa; 
+			   border-radius:100%;line-height:10px;}
+
+.charity .helpus{padding:35px 0px 5px 0px ;font-size:13px; font-weight:bold;color:black;}
+
+.content-up{
+	background-color:#FDFDFD;
+	margin-bottom:15px;
+}
+.content-upcoming{
+	padding-top:90px;
+	width:calc(100% - 30px);
+	margin-left:auto;
+	margin-right:auto;
+}
+.content-upcoming h2{
+	text-align:left;
+	font-size:16px;
+	margin-top:0;
+	padding-left:0;
+}
+.content-upcoming .trait{
+	height:8px;
+	border-bottom-style:solid;
+	border-bottom-color:#EB5310;
+	border-bottom-width:3px;
+	border-top-style:solid;
+	border-top-color:#EB5310;
+	border-top-width:3px;
+	margin-left:10px;	
+	margin-bottom:20px;
+}
+.content-upcoming h3{
+	margin-top:0;
+	margin-bottom:10px;
+}
+.content-upcoming .font-8{
+	font-size:12px;
+}
+.content-upcoming .datenumber{
+	height:60px;
+	width:70px;
+	background-color:EB5310;
+	text-align:center;
+	line-height:58px;
+	color:white;
+	font-size:16px;
+	font-weight:bold;
+}
+.content-upcoming .fleche{
+	margin-left:3px;
+	float:right;
+	width:30px;
+	height:30px;
+	background-color:#EB5310;
+	text-align:center;
+	line-height:28px;
+	color:white;
+	font-weight:bold;
+}
+.content-upcoming .image{
+	position:relative;
+}
+.content-upcoming  .image img{
+	width:100%;
+	height:225px;
+}
+.content-upcoming .day{
+	position:absolute;
+	top:0px;
+	right:0;
+	height:50px;
+	width:60px;
+	background-color:#EB5310;
+	color:white;
+	text-align:center;
+	line-height:48px;
+	
+}
+.content-upcoming .month{
+	position:absolute;
+	top:50px;
+	right:0;
+	height:30px;
+	width:60px;
+	background-color:black;
+	color:white;
+	text-align:center;
+	line-height:28px;
+	
+}
+.content-upcoming .margin-5{
+	margin-bottom:10px;
+}
+.testimonial{
+	width:300px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.testimonial h2{
+	font-size:30px;
+	margin-top:0;
+}
+.testimonial .traitundertitle{
+	margin-bottom:65px;
+}
+.testimonial .guillemet{
+	width:70px;
+	height:70px;
+	border-radius:60px;
+	border: solid grey 1px;
+	text-align:center;
+	line-height:80px;
+	margin-left:auto;
+	margin-right:auto;
+	color:#EB5310;
+	font-weight:bold;
+	margin-bottom:25px;
+	font-size:50px;
+	
+}
+.testimonial .text{
+	text-align:center;
+	color:grey;
+	margin-bottom:10px;
+}	
+.testimonial .name{
+	color:black;
+	font-weight:bold;
+}
+.testimonial .last{
+	margin-bottom:105px;
+}
+.testimonial .slide{
+	margin-bottom:90px;
+}
+
+/*cause */
+.content-cause{
+	margin-top:90px;
+	margin-bottom:90px;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:12px;
+	color:grey;
+}
+.content .imgcause{
+	width:100%;
+	height:200px;
+
+}
+.content-cause .block{
+	position:relative;
+	width:285px;
+	border-style:solid;
+	border-width:5px;
+	border-color:grey;
+	margin-left:15px;
+	margin-bottom:30px;
+}
+.content-cause .block .abs75{
+	position:absolute;
+	top:162.5px;
+	left:calc(50% - 25px);
+	width:50px;
+	height:50px;
+	background-color:#EB5310;
+	border-style:solid;
+	border-width:5px;
+	border-color:#FF7135;
+	border-bottom-color:grey;
+	border-radius:75px;
+	color:white;
+	text-align:center;
+	line-height:48px;
+}
+
+.content-cause .block .titre{
+	font-size:18px;
+	color:black;
+}
+
+.content-cause .content-block{
+	width:calc(100%-20px);
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:0px;
+}
+.content-cause .margebot-30{
+	margin-bottom:30px;
+}
+.content-cause .inline-block{
+	display:inline-block;
+}
+.content-cause .donate{
+	margin-left:10px;
+	height:35px;
+	line-height:33px;
+	text-align:center;
+	color:white;
+	background-color:#EB5310;
+	border-radius:30px;
+	margin-bottom:30px;
+}
+
+.content-cause .donate a{
+		color:white;
+		font-weight:bold;
+		text-align:center;
+}
+.content-cause .donator{
+	margin-left:10px;
+	height:35px;
+	line-height:31px;
+	text-align:center;
+	background-color:white;
+	border-radius:30px;
+	margin-bottom:30px;
+	border-style:solid;
+	border-color:#EB5310;
+	border-width:3px;
+}
+
+.content-cause .donator a{
+		color:#Eb5310;
+		font-weight:bold;
+		text-align:center;
+}
+.content-cause .hide{
+	display:inline-block;
+}
+
+/* mark */
+.mark{
+	height:135px;
+	background-color:#EEEEEE;
+	width:100%;
+}
+.contentlogo{
+	text-align:center;
+	line-height:134px;
+	width:calc(100% - 120px);
+	margin-left:auto;
+	margin-right:auto;
+}
+.mark img{
+	display:inline-block;
+	width:90px;
+	height:20px;
+}
+/*footer */
+footer{
+	background-color:#262F36;
+	padding-top:90px;
+	color:white;
+	font-size:14px;
+	border-bottom-width:3;
+	border-bottom-style:solid;
+	border-bottom-color:#2C353C;
+}
+.contentfooter{
+	width:calc(100% - 60px);
+	margin-right:auto;
+	margin-left:auto;
+	
+}
+.block-footer{
+	margin-bottom:50px;
+}
+footer h3{
+	color:white;
+	margin:0;
+
+}
+footer input{
+	text-indent:20px;
+	width:100%;
+	height:50px;
+	border:none;
+	background-color:#2C353C;
+	color:#59636D;
+	margin-bottom:10px;
+	
+}
+footer textarea{
+	text-indent:20px;
+	width:100%;
+	height:100px;
+	border:none;
+	background-color:#2C353C;
+	color:#59636D;
+	margin-bottom:10px;
+	
+}
+footer button{
+	height:50px;
+	border:none;
+	width:100%;
+	background-color:#Eb5310;
+	color:white;
+	margin-bottom:10px;
+	text-align:center;
+	line-height:48px;
+	
+}
+footer p{
+	color:#59636D;
+}
+footer a{
+	color:white;
+}
+footer .fa{
+	margin-right:15px;
+}
+footer .petite-marge{
+	margin-bottom:20px;
+}
+footer .grande-marge{
+	margin-bottom:30px;
+}
+footer .marge-25{
+	margin-bottom:25px;
+}
+footer .marge-35{
+	margin-bottom:35px;
+}
+footer img{
+	width:100%;
+	height:60px;
+}
+footer .logo-rs{
+	display:inline-block;
+	width:30px;
+	height:30px;
+	line-height:28px;
+	text-align:center;
+	border-style:solid;
+	border-color:white;
+	border-radius:20px;
+	border-width:1px;
+}
+footer .logo-rs span{
+	width:30px;
+	line-height:28px;
+}
+.copyrigth{
+	background-color:#262F36;
+	text-align:center;
+	color:white;
+	height:60px;
+	line-height:58px;
+}
+.copyrigth .name{
+	color:#Eb5310;
+}
+
+/* OUR MISSION */
+.ourMission{padding:15px; margin-top:98px;}
+.ourMission .center{text-align:center}
+/*.ouMission h2 {font-size:40px; font-weight:bold; color:black; margin:0px; padding:0px; text-align:center}
+.ourMission h3 {font-size:24px; font-weight:bold; color:black; margin:0px; padding:0px} */
+
+/*.ouMission  .block-line .block .block-text  h3 {font-size:24px; font-weight:bold; color:black; margin:0px; padding:0px}*/
+
+.ourMission .sousTitre{font-size:17px; text-align:center;}
+.ourMission .separateur{margin:auto; width:100%; height:1px; background-color:white; text-align:center}
+.ourMission .content{margin:70px 35px 0px 35px}    /* margin-top:70px; margin-bottom:0 */
+.ourMission .block {text-align:center; margin-bottom: 85px;}
+.ourMission .block h3{margin-top:0}
+.ourMission .icon{margin-bottom:25px;}   /* A CHANGER */       /* margin-left:calc(50% - 32.5px); */
+.ourMission .block-text{font-size:15px; color:grey; line-height:28px;}
+.ourMission .block-text p{margin-top:10px; margin-bottom:10px; padding-top:0; padding-bottom:0;}
+.ourMission .more{font-size:15px; font-weight:bold; text-decoration:none;}
+
+@media screen and (min-width:40rem){
+	.visual .icon{margin-right:5px}
+	.visual .text{margin:0}
+	
+	.save .title{margin-top:-45px}
+	.save .text{padding-left:18%;padding-right:18%;box-sizing:border-box}
+	.save .buttonDonate{margin-left:calc(100% - 155px)}
+	.save .buttonRead{margin-left:0}
+	
+	.ourGallery .photo{margin:auto;padding-bottom:2px}
+	.ourGallery .photoInt{padding:3px}
+	.endGallery{padding:80px 40px 50px 40px}
+	.endGallery .titleEndGallery{text-align:left;padding-top:10px;padding-right:30px;font-size:30px}
+	.endGallery .titleEndGallery b{font-size:35px}
+	.endGallery .numbEndGallery{margin-bottom:10px}
+	.endGallery .buttonEndGallery{margin-left:0;margin-right:0}
+	
+	.ourMission .block{text-align:left; padding-right:25px;}
+	.ourMission .icon{padding-left:calc(50% - 32.5px)}
+	
+.header.row{margin-top:0px;border-bottom:1px rgb(234,234,234) solid;padding-left:24px;height:49px}
+.header.row .colonne_logo{border-bottom:0}
+.header.row div.logo div{border-top:0}
+.header.row .compagny{padding-bottom:0;padding-top:0}
+.header.row span{line-height:48px;float:left;}
+.header.row div.logo{float:right;padding-right:24px;}
+
+
+.contact.row{padding-top:38px;padding-bottom:36px;font-size:0;box-sizing:border-box}
+
+.contact.row .charity img{margin:0;width:62px;height:62px}
+.contact.row .charity .colonne_droite{width:auto;padding-top:12px;text-align:center}
+.contact.row .charity .colonne_droite b{font-size:20px}
+.contact.row .charity .colonne_droite span{font-size:10px;line-height:26px}
+
+.contact.row .colonne_contact{margin:0px}
+.contact.row .colonne_contact i{}
+.contact.row .colonne_contact div{margin-top:0;text-align:center;padding-top:12px}
+.contact.row .colonne_contact br.retour{display:none}
+.contact.row .colonne_contact span.espace{display:inline}
+
+.contact.row .donate{text-align:center;margin-top:40px;margin-bottom:10px;vertical-align:top}
+
+.search.row{padding-left:2%;padding-right:2%}
+.search.row div:first-child{padding-left:28px;padding-right:70px}
+
+.search.row{height:auto}
+.search.row ul.menu_ligne{padding-left:0;padding-right:0;margin-top:5px;margin-bottom:5px;box-sizing:border-box;font-size:0;}
+.search.row ul.menu_ligne li{display:inline-block;width:20%;height:40px;line-height:40px;text-align:left;}
+.search.row ul.menu_ligne li a{font-size:12px;font-weight:bold;color:white;text-decoration:none;}
+
+.search.row form.formulaire{width:auto;margin-top:8px;height:82px;float:none}
+	
+.charity {padding-left:45px; padding-right:45px}		
+
+.charity  .block-text{padding: 60px 35px 30px 35px}
+.charity  .block-goal{padding-top:30px;
+					 width:100%; height:25%;}
+.charity .help{padding-top:30px;}
+.charity .help a.white{display:none}
+.charity .help a.orange{margin-top:20px}
+.charity .helpus{padding-top:0px}
+
+.charity .block-image{padding:0 0 0 0;} 			  /* hérité : position:relative; */
+
+.charity .block-goal{padding-top:0;}
+.charity .block-goal .orange{float:left;}
+.charity .block-goal  .bar1{left:10px; top:43%; width:83%; height:10%;}				   
+.charity .block-goal  .bar2{right:10px; top:43%; width:13%; height:10%;}
+.charity .block-goal .puce-pourcent{left:82%; top:37%; width:25px; height:25px;}
+
+.charity .block-goal-medium {padding-top:15px; padding-right:10px}	
+	
+	.content-up{
+	background-color:#FDFDFD;
+	margin-bottom:15px;
+	}
+	.content-upcoming{
+		padding-top:90px;
+		width:calc(100% - 60px);
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.content-upcoming h2{
+		text-align:left;
+		font-size:20px;
+	}
+	.content-upcoming h3{
+		margin-top:0;
+		margin-bottom:10px;
+	}
+	.content-upcoming .datenumber{
+		height:60px;
+		width:70px;
+		background-color:EB5310;
+		text-align:center;
+		line-height:58px;
+		color:white;
+		font-size:16px;
+		font-weight:bold;
+	}
+	
+	.content-upcoming .row .row.text{
+		border-bottom-style:solid;
+		border-bottom-color:grey;
+		border-bottom-width:1px;
+		margin-bottom:15px;
+	}
+	
+	.content-upcoming .mois{
+		height:30px;
+		width:70px;
+		background-color:black;
+		text-align:center;
+		line-height:29px;
+		color:white;
+		font-size:16px;
+		font-weight:bold;
+	}
+	.content-upcoming .grande-photo img{
+		width:100%;
+		height:450px;
+	}
+	.content-upcoming .traitundertitle{
+		margin-left:0px;
+		margin-bottom:20px;
+	}
+	.content-upcoming .petite-photo{
+		padding-left:0px;
+	}
+	.content-upcoming .petite-photo img{
+		width:100%;
+		height:223px;
+	}
+	.content-upcoming .font-12{
+		font-size:12px;
+	}
+		/*cause*/
+	.content-cause .block{
+		margin-bottom:0;
+	}
+	.content-cause .imgcause{
+		margin-bottom:45px;
+		height:160px;
+	}
+	.content-cause .hide{
+		display:none;
+	}
+	.content-cause .block .abs75{
+	
+		top:135px;
+		left:0px;
+	}
+	
+	/* mark */
+	.mark{
+		height:165px;
+	}
+	.contentlogo{
+		line-height:168px;
+	}
+	.mark img{
+		width:120px;
+		height:25px;
+	}
+	/*footer */
+	.contentfooter{
+		width:calc(100% - 70px);
+	}
+	/*traitundertitle*/
+	.traitundertitle{
+		margin-bottom:70px;
+	}
+}
+
+@media screen and (min-width:64rem){
+	.visual .block{text-align:left}
+	.visual .icon{margin-left:0}
+	.visual .button{text-align:center;margin:0}
+	
+	.ourMission{padding-top:0;padding-bottom:0}
+	.ourMission .content{margin: 70px 0px 10px 0px; }	  /* +hérité : margin-top:70px; */
+	.ourMission .block {text-align:left}
+	.ourMission .icon{margin-left:0px;} 
+	
+	.news .info{padding-left:45px;padding-right:30px}
+	
+	.contact.row{padding-left:39px;padding-right:35px}
+.contact.row .charity{padding-left:0;padding-right:0}
+.contact.row .charity img{float:left;margin-right:7px}
+.contact.row .charity .colonne_droite{width:220px;padding-top:0;text-align:left;float:left}
+.contact.row .charity .colonne_droite b{font-size:29px}
+.contact.row .charity .colonne_droite span{font-size:13px;line-height:28px}
+
+.contact.row .colonne_contact{margin:0px;padding-left:0;padding-right:0}
+.contact.row .colonne_contact i{float:left;margin-right:19px}
+.contact.row .colonne_contact div{float:left;margin-top:0;text-align:left;padding-top:12px}
+.contact.row .colonne_contact br.retour{display:none}
+.contact.row .colonne_contact span.espace{display:inline}
+
+.contact.row .donate{margin-top:9px;margin-bottom:0;padding-left:0;padding-right:0}
+
+
+.search.row{height:70px;padding-right:35px;white-space:nowrap}
+.search.row{padding-left:35px}
+
+.search.row ul.menu_ligne{margin-top:0;margin-bottom:0}
+.search.row ul.menu_ligne li{width:auto;height:70px;line-height:70px;margin-top:0;margin-bottom:0;padding-left:0px;padding-right:5%}
+.search.row ul.menu_ligne li a{font-size:12px}
+
+.search.row form.formulaire{height:64px;margin-top:6px;margin-right:0}
+.search.row form.formulaire i{position:absolute;top:26px;right:35px;}
+}
+
+@media screen and (max-width:40rem){
+	.search.row .colonne_formulaire{width:calc(100% - 87px)}	
+}

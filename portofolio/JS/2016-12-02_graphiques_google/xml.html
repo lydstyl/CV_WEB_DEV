@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <!--script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script-->
+    <script type="text/javascript">
+        if(typeof window.DOMParser != "undefined"){
+            parseXml = function(xmlStr){
+                return (new window.DOMParser()).parseFromString(xmlStr, "text/xml");
+            }
+        }else if(
+            typeof window.ActiveXObject != "undefined" && 
+            new window.ActiveXObject("Microsoft.XMLDOM")) {
+            xmlDoc.async = "false";
+        }else{
+		    throw new Error("No XML parser found");
+	    }
+        /* 
+        var xml = parseXml("<foo>Stuff</foo>");
+        alert(xml.documentElement.nodeName);
+        alert(xml.documentElement.childNodes[0].nodeValue);
+        throw new Error("coco");
+        */
+        /*
+        var xml = '<email>';
+        xml += '<from>Oliver</from>';
+        xml += '<to>Christain</to>';
+        xml += '<entete>Important</entete>';
+        xml += '<message>Partie de badmington</message>';
+        xml += '</email>';
+
+        var xmlDoc = parseXml(xml);
+        console.log(xmlDoc.childNodes[0].childNodes[0].innerHTML)
+        */
+        
+
+
+        var garageXml='<garage><vehicule><marque>Peugeot</marque><couleur>bleue</couleur><km>55326</km></vehicule><vehicule><marque>Renault</marque><couleur>verte</couleur><km>222365</km></vehicule><vehicule><marque>audi</marque><couleur>blanche</couleur><km>130000</km></vehicule></garage>';
+
+        garageXml='\
+            <garage>\ 
+                <voiture>\ 
+                    <marque>Peugeot</marque>\ 
+                    <couleur>bleue</couleur>\ 
+                    <km>55326</km>\
+                </voiture>\
+                <voiture>\
+                    <marque>Renault</marque>\
+                    <couleur>verte</couleur>\
+                    <km>222365</km>\
+                </voiture>\
+                <moto>\
+                    <marque>Audi</marque>\
+                    <couleur>blanche</couleur>\
+                    <km>130000</km>\
+                </moto>\
+            </garage>'
+
+        objGarageXml = parseXml(garageXml);
+        for(var vehicule=0;vehicule<3;vehicule++){
+            for(var i = 0; i<3;i++){
+                console.log(objGarageXml.childNodes[0].childNodes[vehicule].childNodes[i].innerHTML);
+            }
+        }
+        
+    </script>
+  </head>
+  <body>
+    <div id="graphique" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>

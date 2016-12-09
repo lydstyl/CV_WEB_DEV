@@ -1,0 +1,17 @@
+/*main*/
+.clear{clear:both}
+/*form*/
+h1{text-align: center}
+h2,form{width: 600px;margin: 0 auto;padding: 20px;border: 1px solid black}
+h2 input{position:absolute;right:0;bottom:0}
+h2{position: relative;margin-top:10px;background: lightblue}
+form{border-top: none}
+input{margin: 10px;}
+p{margin: 0;}
+input[regex]{color:blue}
+input[value="suivant"]{float:right;font-size: 16px;}
+input[value="modifier"]{font-size: 16px;}
+input[data-good="Numéro valide"]{width: 30px;}
+input[data-good="IBAN valide"],input[data-good="BIC valide"]{margin:0}
+input[data-good="IBAN valide"]{width: 48px;}
+input[data-good="BIC valide"]{width: 48px;}

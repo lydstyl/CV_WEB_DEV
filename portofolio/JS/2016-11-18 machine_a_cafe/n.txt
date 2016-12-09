@@ -1,0 +1,5 @@
+stock maxi + recharge optimale
+texte défilement
+barre de progression sucre
+barre de progression temps
+remplacer les vairiable mal nommées genre con

@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<title>Javascript</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+
+		<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+		<link href="css/grille.css" rel="stylesheet" type="text/css" />
+		<link href="css/jquery-ui.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script>
+			
+		</script>
+	</head>	
+	<body>
+		<div id="page">
+			<h1>Jquery : formulaire</h1>
+			<div id="accordion">
+				<h2>Identité <input type="button" value="modifier"></h2>
+				<form action="">
+					Nom <input type="text" data-regex="^([-êéèïëa-zA-z]{2,30})$" data-error="Nom invalide" data-good="Nom valide"><br />
+					Prénom <input type="text" data-regex="^([-êéèïëa-zA-z]{2,30})$" data-error="Prénom invalide" data-good="Prénom valide"><br />
+					<p>Date de naissance <input type="text" id="datepicker"></p>
+					Lieu de naissance <input type="text" data-regex="^([-êéèïëa-zA-z]{2,30})$" data-error="Lieu invalide" data-good="Lieu valide"><br />
+					<label for="country">Pays de naissance</label>
+					<select name="country" class="country">
+					<optgroup label="Europe">
+						<option value="jquery">Italie</option>
+						<option value="jqueryui">France</option>
+					</optgroup>
+					<optgroup label="Afrique">
+						<option value="somefile">Sénégal</option>
+						<option value="someotherfile">Congo</option>
+					</optgroup>
+					</select><br />
+					Tél <input type="text" data-regex="^(([0-9]{2}( )?){4}[0-9]{2})$" data-error="Tél invalide" data-good="Tél valide"><br />
+					<input type="button" value="suivant">
+					<div class="clear"></div>
+				</form>
+				<h2>Adresse <input type="button" value="modifier"></h2>
+				<form action="">
+					Numéro <input type="text" data-regex="^([0-9]{1,30})$" data-error="Numéro invalide" data-good="Numéro valide"> 
+					<!-- Type de rue <input type="text"><br />-->
+					<label for="typeRue">Type de rue</label>
+					<select name="typeRue" class="typeRue">
+						<option value="type1">Rue</option>
+						<option value="type2">Avenue</option>
+						<option value="type2">Boulevard</option>
+					</select><br />
+					Rue <input type="text" data-regex="^([- êéèïëa-zA-z0-9]{2,80})$" data-error="Rue invalide" data-good="Rue valide"><br />
+					Ville <input type="text" data-regex="^([-êéèïëa-zA-z]{2,30})$" data-error="Ville invalide" data-good="Ville valide"><br />
+					CP <input type="text" data-regex="^([0-9]{5})$" data-error="CP invalide" data-good="CP valide"><br />
+					<!--Pays <input type="text"><br />-->
+					<label for="country">Pays</label>
+					<select name="country" class="country">
+					<optgroup label="Europe">
+						<option value="jquery">Italie</option>
+						<option value="jqueryui">France</option>
+					</optgroup>
+					<optgroup label="Afrique">
+						<option value="somefile">Sénégal</option>
+						<option value="someotherfile">Congo</option>
+					</optgroup>
+					</select><br />
+					<input type="button" value="suivant">
+					<div class="clear"></div>
+				</form>
+				<h2>Bancaire <input type="button" value="modifier"></h2>
+				<form action="">
+					Banque <input type="text" data-regex="^([ -êéèïëa-zA-z]{2,30})$" data-error="Banque invalide" data-good="Banque valide"><br />
+					Numéro de compte <input type="text" data-regex="^([0-9]{11})$" data-error="Numéro de compte invalide" data-good="Numéro de compte valide"><br />
+					<!--FRkk BBBB BGGG GGCC CCCC CCCC CKK-->
+					IBAN <input type="text" data-regex="^([a-zA-Z]{2}( )?[0-9]{2})$" data-error="IBAN invalide" data-good="IBAN valide">
+					<input type="text" data-regex="^([a-zA-Z]{4})$" data-error="IBAN invalide" data-good="IBAN valide">
+					<input type="text" data-regex="^([a-zA-Z]{4})$" data-error="IBAN invalide" data-good="IBAN valide">
+					<input type="text" data-regex="^([a-zA-Z]{4})$" data-error="IBAN invalide" data-good="IBAN valide">
+					<input type="text" data-regex="^([a-zA-Z]{4})$" data-error="IBAN invalide" data-good="IBAN valide">
+					<input type="text" data-regex="^([a-zA-Z]{4})$" data-error="IBAN invalide" data-good="IBAN valide">
+					<input type="text" data-regex="^([a-zA-Z]{3})$" data-error="IBAN invalide" data-good="IBAN valide">
+					<br />
+					<!--DAAE FR PP CCT-->
+					BIC <input type="text" data-regex="^([a-zA-Z]{4})$" data-error="BIC invalide" data-good="BIC valide">
+					<input type="text" data-regex="^([a-zA-Z]{2})$" data-error="BIC invalide" data-good="BIC valide">
+					<input type="text" data-regex="^([a-zA-Z]{2})$" data-error="BIC invalide" data-good="BIC valide">
+					<input type="text" data-regex="^([a-zA-Z]{3})$" data-error="BIC invalide" data-good="BIC valide">
+					<br />
+					<input type="button" value="suivant">
+					<div class="clear"></div>
+				</form>
+			</div>
+		</div>		
+	</body>
+	<script type="text/javascript" src="js/script.js"></script>
+</html>

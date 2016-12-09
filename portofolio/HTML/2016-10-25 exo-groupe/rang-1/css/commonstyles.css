@@ -1,0 +1,33 @@
+/******* GENERAL PROPERTIES ********/
+*{margin:0;padding:0}
+body{min-width:320px;font-family:'Open Sans';text-align:center}
+body #bodyContener{max-width:1250px;margin-left:auto;margin-right:auto}
+/* Titles */
+h1{font-weight:normal;font-size:30px}
+h2{font-weight:bold;font-size:14px; color:#000;text-align:center;margin-top:100px}
+h3{font-weight:bold;font-size:12px;color:#000}
+/* Links */
+a{text-decoration:none;color:#000}
+a:hover{font-weight:bold}
+/* Buttons */
+.button{display:inline-block;text-align:center;text-transform:uppercase;line-height:30px;padding-left:25px;padding-right:25px;font-weight:bold;font-size:12px;color:#FFF;background-color:#F24B05;border:2px solid #FFF;border-radius:25px}
+/********** Header ***********/
+
+
+
+/********** Content **********/
+
+
+
+/********** Footer ***********/
+
+
+/******* MEDIA QUERIES PROPERTIES ********/
+/* Phones */
+@media screen and (min-width: 0px){
+	
+}
+/* Tablets */
+@media screen and (min-width: 768px){
+	
+}

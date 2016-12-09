@@ -1,0 +1,27 @@
+<html>
+<head>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery-ui.js"></script>
+	<script type="text/javascript">
+		$.ajax({
+			url: "json",
+			type : 'GET',
+			dataType : 'json',
+			success: function(data){
+				for(var item in data){
+					$('#accordion').append($('<h3/>').html(item));
+					var div = $('<div/>');
+					for(var i=0; i<data[item].length; i++){
+						$(div).append($('<a/>').css({display:'block'}).html(data[item][i].texte).attr('href',data[item][i].link));
+					}
+					$('#accordion').append(div);
+				}
+				$('#accordion').accordion()
+			}
+		})
+	</script>
+</head>
+<body>
+	<div id="accordion"></div>
+</body>
+</html>

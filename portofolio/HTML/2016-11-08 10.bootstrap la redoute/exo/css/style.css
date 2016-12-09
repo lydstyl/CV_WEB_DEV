@@ -1,0 +1,97 @@
+/* REPEATING STUF */
+	/* main */
+body{font-family:arial}
+.container-fluid{padding:0}
+h1{text-transform:uppercase}
+header .col-xs-10,.threePoint{box-sizing:border-box;height:60px;border-bottom:1px solid #CECECF}
+header .col-xs-2 {padding-left:0}
+header .threePoint{border-left:1px solid #CECECF;background-image:url('../img/double_image_header.png');background-position:top;background-repeat:no-repeat}
+header .threePoint:hover{background-position:bottom;}
+header img{margin:17px 0 0 20px}
+.beginBox{margin:20px;position:relative;text-align:center}
+.beginBox a{margin:0;height:50px;line-height:40px;display:inline-block;padding:5px 18px}
+.beginBox a:first-child{margin:0;background-color:#EC137C;color:white;font-size:18px;font-family:Oswald}
+.beginBox a:first-child>span{margin-left:14px;font-size:20px}
+.beginBox a:last-child{font-family:arial;font-weight:bold;font-size:12px;color:rgb(173,173,173);text-decoration:underline}
+footer{padding:0 0 43px 0;background:rgb(248,248,248)}
+footer p{margin-bottom:2px;padding:22px;font-size:10px;color:rgb(127,127,127)}
+footer .engagement{font-size:13px;text-align:center;font-weight:bold}
+	/* special */
+.clear{clear:both}
+.vertical-align{/*display:inline-block;*/position:relative;top:50%;transform:translateY(-50%)}
+	/* bootstrap */
+.row{margin:0}
+		/* gestion des padding des colonnes page 1615 */
+/* PAGES */
+.p0{margin:0}
+.p0 h1{margin:12px 0 0;font-size:15.65px;color:#EE127E;font-family:Montserra;font-weight:bold}
+.p0 h2{margin:30 0 10px 0;font-size:20px;text-align:center;font-family:Montserrat;color:#EE127E}
+.p0 greyBar{}
+.p0 .visual{position:relative;height:179px;background:white url("../img/visual.png") no-repeat scroll 50% 0;text-align:center}
+.p0 .visual .whiteBox{width:260px;position:absolute;left:50%;margin-left:-130px;bottom:46px;margin-top:30px;display:inlin-block;width:260px;height:57px;background-color:rgba(255,255,255,0.8);border-radius:4px}
+.p0 .visual .whiteBox a{color:black;text-decoration:underline;font-size:13.41px;font-family:Montserra}
+.p0 ul{margin-bottom:0;padding-left:74px;background:white url("../img/ligne_points.png") no-repeat scroll 37px 53px;}
+.p0 ul li{height:80px;position:relative;list-style-type:none;border-bottom:1px solid #EBEBEB}
+.p0 ul li .circle{width:36px;height:36px;position:absolute;top:23px;left:-55px;list-style-type:none;background-color:#EBEBEB;border-radius:50%;text-align:center}
+.p0 ul li>p{display:block;margin:0;line-height: 16px;position:relative;top:50%;transform:translateY(-50%)}
+.p0 ul li:nth-child(3)>p,li:nth-child(4)>p{font-weight:bold}
+.p0 .right{display:none}
+.p0 .right h2{margin-bottom:25px}
+.p0 .right ul {margin-left:38px;padding:0}
+.p0 .right ul li{height:112.8px;padding-left:122px;background:#F7F7F7 url("../img/page-0_5puces.png") no-repeat scroll -80px -30px;}
+.p0 .right ul li:nth-child(3)>p,li:nth-child(4)>p{font-weight:normal}
+.p0 .right ul li:nth-child(1){background-position:-18px -16.8px}
+.p0 .right ul li:nth-child(2){background-position:-18px -116.8px} 
+.p0 .right ul li:nth-child(3){background-position:-18px -222.8px}
+.p0 .right ul li:nth-child(4){background-position:-18px -322.8px}
+.p0 .right ul li:nth-child(5){background-position:-18px -426.8px}
+
+.p1 .titleBox{height:34px;position:relative}
+.p1 h1{margin-top:27px;padding:0 54px;font-size:18px;font-family:Montserrat;text-align:center}
+.p1 .pageBall,.infoBall{position:absolute;top:-17px;width:42px;height:42px;line-height:42px;border-radius:50%;text-align:center;color:white}
+.p1 .pageBall{left:10px;background-color:#EC137E;font-size:14px}
+.p1 .pageBall span{font-size:24px;font-weight:bold}
+.p1 .infoBall{right:14px;background-color:#767676;font-family:Oswald;font-size:25.85px}
+.p1 .titleBox img{position:absolute;right:27px;bottom:0}
+.p1 .infoBox{height:65px;background-color:#F7F7F7;text-align:center;font-size:14px}
+.p1 iframe{display:block;margin:30px auto;width:322px;height:430px}
+.p1 .readed{padding:12px 0;background-color:#F7F7F7}
+.p1 input{display:none}
+.p1 input+label{position:relative;padding-left:77px;margin:0;font-size:14px;font-weight:normal;background-color:#F7F7F7}
+.p1 input+label:before{content:"";display:block;position:absolute;top:calc(50% - 15px);left:0;width:62px;height:30px;background:#F7F7F7 url('../img/checkbox.png') -41px -30px no-repeat}
+.p1 input:checked+label:before{content:"";display:block;position:absolute;left:0;width:62px;height:30px;background:#F7F7F7 url('../img/checkbox.png') -41px 0 no-repeat}
+
+.p1 ul{font-size:0;}
+.p1 ul li{z-index:1;background:#EBEBEB url('../img/bg_btn.png') 0 0 / 100% 200% no-repeat;width:20%; height:50px;line-height:50px;margin-left:-58px;display:inline-block;font-size:14px;text-align:center}
+.p1 ul li:hover{z-index:2;background:#EBEBEB url('../img/bg_btn.png') 0 -50px no-repeat;color:white}
+.p1 ul li:hover+li{background-color:#ED137D}
+
+.p1 ul li div{content:'1';display:inline-block;width:30px;height:30px;margin:10px;line-height:30px;vertical-align:top;background:#FFFFFF;border-radius:50%;color:black}
+.p1 ul li a{display:inline-block;color:black;vertical-align:top}
+
+.p1 ul li:hover a{color:white}
+.p1 ul li:hover a:hover{text-decoration:none}
+
+/* .p1 ul{font-size:0;} */
+/* .p1 ul li{height:51px;line-height:51px;display:inline-block;background:#E5E5E5;font-size:14px;text-align:center} */
+/* .p1 ul li div{content:'1';display:inline-block;width:30px;height:30px;margin:10px;line-height:30px;vertical-align:top;background:#FFFFFF;border-radius:50%;color:black} */
+/* .p1 ul li a{display:inline-block;color:black;vertical-align:top} */
+/* .p1 ul li:after{content:'';width:41px;height:51px;display:inline-block;background:red url('../img/etapeBar.png') 0px 51px} */
+/* .pi ul li:nth-child(5):after{content:"coucou";font-size:10px} */
+/* .p1 ul li:hover{background:#EC137C;color:white} */
+/* .p1 ul li:hover a{color:white} */
+/* .p1 ul li:hover a:hover{text-decoration:none} */
+/* .p1 ul li:hover:after{background:red url('../img/etapeBar.png') 0px 0px} */
+
+/* MEDIA */
+@media (min-width: 1200px) {
+  header .col-xs-10{height:92px}
+  header img{margin:30px 0 0 110px}
+  .p0{width:80%;margin:auto}
+  .p0 .greyBar{width:75px;height:4px;margin:20px auto 0;background-color:rgb(235,235,235);border:1px solid rgb(235,235,235)}
+  .p0 .right h2{margin-bottom:20px}
+  .p0 .right .greyBar{margin-bottom:15px}
+  .p0 .right{display:block}
+  .p0 .beginBox{position:relative}
+  .p0 .beginBox a:last-child{position:absolute;left:0}
+}

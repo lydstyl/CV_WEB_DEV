@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<script type="text/Javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<link type="text/css" rel="stylesheet" href="font-awesome.css" />
+	<link type="text/css" rel="stylesheet" href="css/grid.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>GEO_01</title>
+	<script type="text/javascript">
+	function initialiserCarte()
+	 {
+		if(!navigator.geolocation)
+		{
+			alert("votre navigateur ne gère pas la géolocalisation");
+			return false;
+		}
+		var centreGoogleMap = new google.maps.LatLng(48.0833, -1.6833);
+		
+		var optionsGoogleMap=
+		{
+			zoom:8,
+			center:centreGoogleMap,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		}
+		var maCarte = new google.maps.Map(document.getElementById("maCarte"),optionsGoogleMap);
+	 }
+	</script>
+	
+  </head>
+  <body onload="initialiserCarte()">
+  
+	<h1>Editions</h1>
+	<div id="maCarte" style="width:100%;height:100%"></div>
+	<br /><br /><br />
+	<center>
+		<a href="javascript:window.location='view-source:'+window.location">
+			Code source
+		</a>
+	</center>
+  </body>
+</html>

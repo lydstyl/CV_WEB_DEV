@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<title>lol</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+		<link href="css/font-awesome.css"  rel="stylesheet" type="text/css" />
+		<link href="css/grille.css" rel="stylesheet" type="text/css" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>	
+	<body>
+		<h1>Javascript : gestion des touches</h1>
+		<div id="redBox">
+			<div id="blueBox"></div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		/*Une classe : une fonction dans laquelle on a un objet qui est aussi prototype 
+		et dans lequel on a au moins une fonction initialize*/
+		function moveBlueBox(){
+			$this = prototype = {
+				initialize:function(){
+					blueBox = document.getElementById("blueBox");
+					return this;
+				},
+/*				middle:function(){
+					blueBox.style.top = "100px";
+					blueBox.style.left = "100px";
+				},*/
+				up:function(){
+					blueBox.style.top = "0";
+				},
+				down:function(){
+					blueBox.style.top = "200px";
+				},
+				left:function(){
+					blueBox.style.left = "0";
+				},
+				right:function(){
+					blueBox.style.left = "200px";
+				}
+			}
+			return $this.initialize();
+		}
+
+		o = new moveBlueBox();
+		//o.up();
+
+		var blueBox = document.getElementById("blueBox");
+		
+
+	</script>
+</html>

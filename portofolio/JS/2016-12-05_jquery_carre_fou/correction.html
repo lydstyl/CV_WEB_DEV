@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Animation jQuery 1.6.1</title>
+		<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	</head>
+	<body class="Animation_01">
+		<div class="Center">
+			<h1>Animation jQuery 1.6.1</h1>
+			Réaliser une animation avec jQuery, celle-ci doit fonctionner en boucle continue
+			<br /><br /><u>Contraintes :</u>
+			<br />- Utiliser le top et le left pour deplacer le div
+			<br />- Pas de window.setTimeout()
+			<br />- Utilisation de l'instruction domReady
+		
+		</div>
+		<div class="Move"></div>
+		<script type="text/javascript" src="jquery-1.6.1.min.js"></script>
+		<script type="text/javascript">
+		var ANIM = {
+			top: function(){
+				$('div.Move').animate({
+					left:($(window).width()-100)+'px'
+				}, 1000, 'linear', function(){
+					ANIM['right']();
+				});
+			},
+			right: function(){
+				$('div.Move').animate({
+					top:($(window).height()-100)+'px'
+				}, 1000, 'linear', function(){
+					ANIM['bottom']();
+				});
+			},
+			bottom: function(){
+				$('div.Move').animate({
+					left:'0px'
+				}, 1000, 'linear', function(){
+					ANIM['left']();
+				});
+			},
+			left: function(){
+				$('div.Move').animate({
+					top:'0px'
+				}, 1000, 'linear', function(){
+					ANIM['top']();
+				});
+			}
+		};
+		$(document).ready(function(){
+			ANIM.top()
+		});
+		</script>
+	</body>
+</html>

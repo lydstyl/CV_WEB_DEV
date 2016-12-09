@@ -1,0 +1,58 @@
+/* BODY */
+body{background: grey; width : 1280px; margin: auto; font-family: Arial}
+body * {box-sizing: border-box;}
+
+/* LOGO */
+#logo{height: 160px; margin: 0px;}
+
+/* LE MENU */
+header{background: black; color: white; margin : 10px 0px;}
+.menu{width: 300px}
+ul{height: 60px; margin:0px;}
+li{display: inline-block; line-height: 60px;}
+li a{color: white; text-decoration: none;}
+li a:hover{color: red; text-decoration: underline;}
+
+/* GRANDE IMAGE */
+#boite_grande_image{height: 450px;}
+#boite_grande_image img {display: block;}
+#bandeau{							position: relative;
+									bottom: 40px;
+									height: 40px;
+									background: rgba(255,0,0,0);
+									color: rgba(0,0,0,0);}
+#boite_grande_image:hover #bandeau{	position: relative;
+									bottom: 40px;
+									height: 40px;
+									background: rgba(255,0,0,0.5);
+									color: black;
+									text-align: center;
+									line-height: 40px;}
+
+/* LES 3 BOITES 420PX */
+#les_boites_420{width : 1280px ; margin: 10px 0px 0px 0px; box-sizing : border-box;}
+
+.boite_420{background: white; padding: 10px}
+
+/*.boite_420{display : inline-block ; width: 420px;}*/
+.boite_420{width: 420px;}
+#about{float: left;}
+#company{float: left; margin:0px 10px;}
+#services{float: right;	}
+
+/* LA BOITE INVISIBLE POUR CLEAR BOTH */
+.divclear{clear: both; height: 10px;}
+
+/* LA GALLERY */
+#gallery{clear: both;}
+#gallery h1{margin:0px;}
+
+#defilement{margin-top : 10px; width : 1280px; overflow:auto;}
+#les_boites_320 {width : 2560px;}
+.boite320{float: left;}
+
+/* LE FOOTER */
+footer{clear: both; background: white; height: 50px;	margin-top : 10px;}
+footer * {line-height: 50px;}
+.gauche {float: left;}
+.right {float: right ; margin: 0px;}

@@ -1,0 +1,10 @@
+#player{
+    margin: 20px
+}
+.case{
+    height:140px;
+    line-height:140px;
+    font-size:60px;
+    text-align:center;
+    border:1px solid black
+}

@@ -1,0 +1,251 @@
+/* GENERAL */
+body {
+	min-width: 320px;
+	background: grey;
+	margin:0;
+	font-family: arial; 
+	font-size: 16px; 
+	box-sizing: border-box;
+}
+#page {
+	background: white;
+	max-width: 1200px; 
+	margin: auto;
+}
+
+#middle_page /*> * */{width:100%; margin: auto;}
+
+h2 {
+	margin: 90px ;
+	/* auto 30px auto;  */
+	width: 90%;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+a :hover{
+	font-weight: bold;
+}
+
+.margin_auto {margin: 8px auto;text-align: center;}
+.border {border: 1px solid red;}
+.float_left {float: left;}
+.float_right {float: right;}
+.clear_both {clear: both;}
+
+/* HEADER */
+header {	
+	background-image: url('../images/holiday.jpg');
+	height: 540px;
+	background-repeat:no-repeat;
+	background-position:center;
+	color:white;
+}
+header .login_box {
+	top:32px;
+	right:32px;
+	width: 90%;
+	margin: auto;
+}
+
+header .login_box .column {
+	margin-top: 24px; 
+	margin-bottom: 120px;
+	height: 36px; 
+	line-height: 36px;
+}
+@media screen and (min-width:640px){
+	header .login_box .column {
+		margin-top: 0;
+	}
+}
+
+header .float_right {width: 190px;}
+
+header .small-hide.medium-show div {
+/*	margin-top: 24px; 
+	margin-bottom: 120px;
+	height: 36px; 
+	line-height: 36px;*/	
+}
+
+
+
+header .sign_up {	
+	height: 36px;
+	line-height: 36px;
+	border: 2px solid white; 
+	border-radius: 20px;
+	text-align: center;
+}
+
+header .dreamshare {
+		position: static;
+		text-align:center;
+	}
+@media screen and (min-width:640px){ 
+	header .ligne_haute {padding: 20px 20px;}
+}
+
+header h1 {margin-top: 40px; text-align: center;}
+header .find {	
+	height: 36px;
+	line-height: 36px;
+	width: 90%;
+	background: #FE4E50; 
+	border-radius: 20px;
+}
+
+/* HOW */
+#how, #meet {
+	width: 90%;
+	text-align: center; 
+	margin: 24px 0 12px 0;
+}
+#how + .steps .column {
+	color: white;
+}
+
+#how + .steps .column > div {
+	height: 240px;
+	border-radius: 20px;
+	background-image: url('../images/step.jpg');
+	background-repeat:no-repeat;
+	background-position:center;
+	position: relative;
+}
+
+@media screen and (min-width:640px){ /* break point */
+	#how + .steps .column > div {
+		height: 400px;	
+	}
+}
+
+#how + .steps .column .step {
+	display: block; 
+	width: 80px; /* en pourcentage ? */
+	background: #FE4E50;
+	text-align: center;
+	border-radius: 20px;
+}
+
+#how + .steps .column > div .absolute {
+	position: absolute;
+	left: 5%;
+	bottom: 0;
+	width: 90%:
+}
+
+/* MEET */
+#meet {margin: auto;}
+
+#meet .column.small-12.medium-6 {padding: 30px;}
+
+#meet img {
+	border-radius: 50%;
+	height:120px;
+	width:120px;
+}
+
+#meet .rounded_title {
+	width: 200px;
+	height: 36px;
+	line-height: 36px;
+	margin: auto;
+	color: #FE4E50;
+	border: 2px solid #FE4E50;
+	border-radius: 20px;
+}
+
+/* DISCOVER */
+#discover .column h3 {
+	height: 120px;
+	line-height: 120px;
+	text-align: center;
+	background-image: url('../images/discover.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+	margin: 0;
+}
+#discover p {
+	width: 90%;
+	margin: 20px auto;
+	text-align: center;
+}
+#discover form {
+	width: 90%;
+	margin: auto;
+}
+#discover form .column {
+	margin-top: 10px;
+	height: 50px;
+	line-height: 50px;
+}
+#discover .bouton {
+
+	background: #FE4E50; 
+	color: white; 
+	border-radius: 20px;
+	text-align: center;
+}
+#discover input{height: 39px; width: 90%}
+
+/*FOOTER*/
+footer {
+	margin-top: 50px;
+	padding-top: 20px;
+	border-top: 6px solid #FE4E50;
+	color: grey; 
+	text-align: center;
+}
+footer nav {margin: 20px 0;}
+footer b {color: black;}
+footer .pink {color: #FE4E50;}
+footer .logo_box {
+	width: 136px;
+	margin: auto;
+	height: 40px;
+}
+footer .logo_box img {
+	display: inline-block;
+	height: 100%;
+}
+footer .logo_box > div {
+	display: inline-block;
+	height: 100%;
+	font-size: 11px;
+}
+footer .logo_box strong {font-size: 24px;}
+footer ul {
+	width: 90%; 
+	min-width: 330px;
+	margin: auto; 
+	padding: 0;
+}
+footer li {
+	display: inline-block;
+	list-style-type: none;
+}
+@media screen and (min-width:640px){
+	footer .nav_box {
+		position: relative;
+	}
+	footer nav {
+		position: absolute;
+		width: 120px;
+		left: 50%;
+		margin-left: -60px;
+		margin-top: 0;
+		text-align: left;		
+	}
+	footer li {
+		display: block;
+		/* text-align: left; */
+		/* padding-left: 50%; */
+		/* width: 80px; */
+	}
+}

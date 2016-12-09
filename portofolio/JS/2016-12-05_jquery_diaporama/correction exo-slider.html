@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>jQuery slider</title>
+		<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	</head>
+	<body class="Animation_02">
+		<div class="Slider" rel="0">
+			<ul>
+				<li>
+					<img src="./media/img_f1-0.jpg" />
+					<div>F1 Red Bull</div>
+				</li>
+				<li style="display:none">
+					<img src="./media/img_f1-1.jpg" />
+					<div>F1 Toyota</div>
+				</li>
+				<li style="display:none">
+					<img src="./media/img_f1-2.jpg" />
+					<div>F1 Mercedes</div>
+				</li>
+			</ul>
+		</div>
+		<style type="text/css">
+			div.Slider{width:900px;height:450px;background:black;overflow:hidden}
+			div.Slider{display:block;list-style-type:none}
+			div.Slider li{overflow:hidden;display:block;position:relative;height:450px}
+			div.Slider li img{display:block}
+			div.Slider li div{overflow:hidden;background:#000;opacity:0.75;position:absolute;height:40px;width:900px;bottom:0;left:0;font:24px Arial;line-height:40px}
+		</style>
+	</body>
+	<script type="text/javascript" src="jquery-1.6.1.min.js"></script>
+	<script type="text/javascript">
+	var sliderUpdate = function(slider){
+		var current = parseInt($('.slider').attr('rel'));
+		var next = current < $(slider).find('ul li').length-1 ? current+1 : 0;
+		$(slider).find('ul li').eq(current).slideUp(400, function(){
+			$(slider).find('ul li').eq(next).slideDown(1200);
+			$('.slider').attr('rel', next);
+		})
+	}
+	var sliderTimeout = setInterval(function(){
+		sliderUpdate('div.Slider')
+	}, 5000);
+	</script>
+</html>

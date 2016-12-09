@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<title>Machine café</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+		<link href="css/grille.css" rel="stylesheet" type="text/css" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>	
+	<body>
+		<div id="page" class="row">
+			<h1>Javascript : machine à café</h1> 
+			<div class="column medium-6">
+				<h2>Ecran principal</h2>
+				<div>					
+					<div id="screen">
+						
+					</div>
+				</div>
+				<!-- preparerBoisson(typePoudre, dosePoudre, doseEau, doseSucre, prix) -->
+				<h2>Boutons</h2>
+				<div class="buttonBox">
+					<h3>1/ dosez votre sucre</h3>
+					<input type="button" value="+" onclick="modifierDoseSucre('+');" id="ajouterUnSucre"/>
+					<input type="button" value="-" onclick="modifierDoseSucre('-');" id="enleverUnSucre"/>
+					<h3>2/ choisissez votre boisson</h3>
+					<button name="coffeeButton" onclick="preparerBoisson('cafe', 3, 10, 3, 50);">Café long</button>
+					<button name="coffeeButton" onclick="preparerBoisson('cafe', 3, 5, 2, 50);">Café court</button>
+					<button name="coffeeButton" onclick="preparerBoisson('cappucino', 3, 10, 4, 60);">Cappucino</button>
+					<button name="coffeeButton" onclick="preparerBoisson('the', 2, 10, 3, 40);">The</button>
+					<button name="coffeeButton" onclick="preparerBoisson('eau', 0, 12, 0, 20);">Eau</button>
+					<button name="coffeeButton" onclick="preparerBoisson('soupe', 5, 7, 0, 70);">Soupe</button>
+				</div>
+				<h2>Stock</h2>
+				<div id="stockScreen">Le stock est ici</div>
+			</div>
+			<div class="column medium-6">
+				<h2>Console / Historique</h2>
+				<div id="consoleHTML"></div>
+			</div>
+		</div>		
+	</body>
+	<script type="text/javascript" src="js/script.js"></script>
+</html>

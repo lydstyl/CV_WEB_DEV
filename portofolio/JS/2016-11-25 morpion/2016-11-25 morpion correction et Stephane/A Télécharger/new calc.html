@@ -1,0 +1,44 @@
+<table>
+	<tr>
+		<td colspan="4">
+			<div id="view" style="height:24px;border:1px solid #000"></div>
+		</td>
+	<tr>
+		<td><button>7</button></td>
+		<td><button>8</button></td>
+		<td><button>9</button></td>
+		<td><button>+</button></td>
+	</tr>
+	<tr>
+		<td><button>4</button></td>
+		<td><button>5</button></td>
+		<td><button>6</button></td>
+		<td><button>-</button></td>
+	</tr>
+	<tr>
+		<td><button>1</button></td>
+		<td><button>2</button></td>
+		<td><button>3</button></td>
+		<td><button>*</button></td>
+	</tr>
+	<tr>
+		<td><button>0</button></td>
+		<td><button><-</button></td>
+		<td><button>=</button></td>
+		<td><button>/</button></td>
+	</tr>
+</table>
+<script type="text/javascript">
+	var button = document.getElementsByTagName('button');
+	var view = document.getElementById('view');
+	for(var i = 0, il = button.length;i<il;i++){
+		button[i].addEventListener('click', function() {
+			var content = this.innerHTML;
+			switch(content) {
+				case '=' : view.innerHTML = eval(view.innerHTML); break;
+				case '&lt;-':view.innerHTML = '';break;
+				default: view.innerHTML += content;				
+			}
+		});
+	}
+</script>

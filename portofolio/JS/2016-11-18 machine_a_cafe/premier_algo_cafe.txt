@@ -1,0 +1,63 @@
+si courantElectrique == True
+	SI boutonRouge == False
+		Afficher "Bonjour cher drogué à la caféine, appuyez sur le bouton rouge pour lancer la préparation de votre café"
+	ELSE
+
+	#VERIFICATION DES STOCKS
+	SI stockGobelet == 0
+		Afficher "Le gérant est nul, il n'y a plus de Gobelet, merci de l'appeler au 06 XX XX XX XX et de l'insulter"
+	SINON SI stockGobelet < stockMiniGobelet
+		Envoyer SMS au gérant "Il va falloir remplir le stock de gobelet de la machine numéro XXYYZZ qui se trouve à Roubaix"
+
+	SI stockEau < qteMiniEauPourFaireUnCafe
+		Afficher "Le gérant est nul, il n'y a plus d'eau, merci de l'appeler au 06 XX XX XX XX et de l'insulter"
+	SINON SI stockEau < stockEauMini
+		Envoyer SMS au gérant "Il va falloir remplir le stock d'eau de la machine numéro XXYYZZ qui se trouve à Roubaix"
+
+	SI stockCafe < qteMiniCafePourFaireUnCafe
+		Afficher "Le gérant est nul, il n'y a plus de café, merci de l'appeler au 06 XX XX XX XX et de l'insulter"
+	SINON SI stockCafe < stockCafeMini
+		Envoyer SMS au gérant "Il va falloir remplir le stock de cafe de la machine numéro XXYYZZ qui se trouve à Roubaix"
+
+	#AJOUT OU PAS DU SUCRE
+	qteSucre = 3
+	qteSucreMax = 6
+	TANT QUE boutonRouge == False
+		Afficher "Quantité de sucre dans votre café : qteSucre"
+		Afficher "Utiliser les boutons + et - pour modifier la quantité de sucre ou le bouton rouge pour choisir cette quatité"
+		SI boutonPlus == True
+			qteSucre += 1
+			SI qteSucre = qteSucreMax + 1
+				Afficher "Quantité de sucre maximum déjà atteinte"
+				qteSucre -= 1
+				
+		SI boutonMoins == True
+			qteSucre -= 1
+			SI qteSucre = -1
+				Afficher "Quantité de sucre minimum déjà atteinte"
+				qteSucre += 1
+
+
+	Afficher "Préparation de votre café en cours, merci de patienter jusqu'au prochain message"
+
+	Placer gobelet
+	Mettre qteSucre dans gobelet
+	Mettre qteMiniCafePourFaireUnCafe dans gobelet
+	Chauffer qteMiniEauPourFaireUnCafe 
+	Mettre qteMiniEauPourFaireUnCafeChauffee dans gobelet
+	date = maintenant
+	TANT QUE maintenant < (date + 10secondes)
+		Touiller
+	
+	Afficher "Approchez vous des haut parleurs"
+	Emmettre le son cornemuse au volume maximum
+	Afficher "Hahaha"
+	TANT QUE gobeletAvecCafePret est present
+		Afficher "C'est prêt, prenez votre café"
+		
+	stockGobelet -= 1
+	stockEau -= 1
+	stockCafe -= 1
+	stockSucre -= qteSucre
+ELSE
+	EN PANNE

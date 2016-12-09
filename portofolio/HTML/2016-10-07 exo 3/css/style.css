@@ -1,0 +1,46 @@
+/* BODY ET PAGE */
+body {background:#2E2E2E; font-family: Arial;}
+.fa {vertical-align: middle; color: #04B486;}
+#page {width: 960px; background:grey; margin: auto;}
+		
+/* HEADER Y COMPRIS L'IMAGE */
+header {height:357;background-image:url('../grande_image.jpg'); color: white;}
+header .barre_menu {height: 40px;}
+header .barre_menu div {display: inline-block; width:450px; height:40px; line-height: 40px;}
+header .barre_menu .your_name {text-align: center;font-family: Trebuchet MS;}
+header .barre_menu ul {height:40px; margin: 0px; text-align: center;}
+header .barre_menu ul li {display: inline-block; width: 18%;}
+header .barre_menu ul li a {color: white; text-decoration: none;}
+header .barre_menu ul li a:hover {color: #04B486; text-decoration: underline;}
+header .bandeau {padding: 20px 0; background: #04B486; text-align : center; line-height: 15px;}
+header .bandeau .titre {text-transform: uppercase;}
+
+/* COEUR DE LA PAGE EN FOND GRIS */
+.coeur_page {display: table-cell; vertical-align: middle; height: 480px; width: 960px; background: #E6E6E6;}
+.coeur_page .main_box_center {height: 400px; width: 600px; margin: auto;}
+.coeur_page .main_box_center .main_top_div {height: 170px; text-align: center;}
+.coeur_page .main_box_center .main_top_div div {float:left; width: 200px; height: 170px;}
+.coeur_page .main_box_center .main_top_div div div {border:3px solid #04B486; height: 40px; width: 40px; line-height:40px; border-radius: 100%; margin: 0 76px;}
+.coeur_page .lorem2 {font-size: 15px; margin-top: 10px;}
+.coeur_page .lorem13 {font-size: 8px;}					
+.coeur_page .main_box_center .main_bottom_div {height: 230px;}
+.coeur_page .d_image100 {height: 100px; width: 100px; border-radius: 100%; overflow: hidden;}
+.coeur_page .les_2_sur_4 {height: 115px;}
+.coeur_page .les_1_sur_4 {float: left;}
+.coeur_page .float_left div {float: left;}
+.coeur_page .float_right div {float: right;}
+.coeur_page .d_image100 {margin: 0 12px;}
+
+.clear {clear: both;}
+
+/* FOOTER EN FOND VERT*/
+footer {display: block; height: 270px; background: #04B486;}
+footer * {box-sizing: border-box; color: white;}
+footer .barre_3_icones {width: 760px; margin: auto; height: 100px; padding: 40px 0 0 0; line-height: 60px;}
+footer i {background: white; padding: 5px 0 0; margin: 0 30px; line-height: 60px; text-align: center; height: 30px; width: 30px; border: 1px solid green; border-radius: 100%}
+footer span {height: 23px ; width: 60px; font-size: 10px;}
+footer .final_lorem {width: 120px; margin: auto; padding: 60px 0 0 0;}
+footer form {width: 335px; margin: auto;}
+footer input {color: #04B486;}
+
+#page .final_bandouillette {height: 20px; background: #e6e6e6;}

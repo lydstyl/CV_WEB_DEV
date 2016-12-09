@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<script type="text/Javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<link type="text/css" rel="stylesheet" href="font-awesome.css" />
+	<link type="text/css" rel="stylesheet" href="css/grid.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <style>
+        html, body, #maCarte{margin:0;padding:0;height:80%;}
+
+    </style>
+    <title>GEO_01</title>
+	<script type="text/javascript">
+	function initialiserCarte(){
+		if(!navigator.geolocation){
+			alert("votre navigateur ne gère pas la géolocalisation");
+			return false;
+		}
+		var centreGoogleMap = new google.maps.LatLng(48.0833, -1.6833);
+		var optionsGoogleMap={
+			zoom:8,
+			center:centreGoogleMap,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		}
+		var maCarte = new google.maps.Map(document.getElementById("maCarte"),
+        optionsGoogleMap);
+
+        var listeVilles = {
+                Rennes:{
+                    position: new google.maps.LatLng(48.117728, -1.675753), 
+                    population: 207178,
+            },
+                Lille:{
+                    position: new google.maps.LatLng(50.629241, 3.057454), 
+                    population: 227560,
+            },
+                Paris:{
+                    position: new google.maps.LatLng(48.855160, 2.351671), 
+                    population: 2244000,
+            },
+                Lyon:{
+                    position: new google.maps.LatLng(45.763443, 4.835806), 
+                    population: 484344,
+            },
+                Marseille:{
+                    position: new google.maps.LatLng(43.299298, 5.366680), 
+                    population: 850726,
+            }
+        };
+        new google.maps.Circle({
+            strokeColor:"#FF0000", stroleOpacity:0.5, strokeWeight:2, 
+            fillColor:"#FF0000", fillOpacity:0.35, map:maCarte, 
+            center:listeVilles['Rennes'].position, 
+            radius:listeVilles['Rennes'].population /20
+        });
+
+        var imageMarqueurQuimper = 
+        "http://www.webline-services.com/img/logos/logo_linux.png";
+		/*var marqueurQuimper = */new google.maps.Marker({
+			position:new google.maps.LatLng(48, -4.1),
+			map : maCarte,
+			icon: imageMarqueurQuimper
+		});
+	 }
+     //voir page 301 pour terminer l'exo de la liste des villes
+     //meteo possible avec identifiant
+
+	</script>
+  </head>
+  <body onload="initialiserCarte()">
+	<h1>Editions</h1>
+	<div id="maCarte" style="width:100%;height:100%"></div>
+	<br /><br /><br />
+	<center>
+		<a href="javascript:window.location='view-source:'+window.location">
+			Code source
+		</a>
+	</center>
+  </body>
+</html>

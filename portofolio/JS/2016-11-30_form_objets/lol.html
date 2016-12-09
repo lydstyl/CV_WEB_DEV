@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<title>lol</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+		<link href="css/font-awesome.css"  rel="stylesheet" type="text/css" />
+		<link href="css/grille.css" rel="stylesheet" type="text/css" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>	
+	<body>
+		<h1>javascript: form et classe</h1>
+		<h2>forumulaire 1</h2>
+		<form id="form1" action="">
+			<input data-regex="^([a-zA-Z-éèïäëê]{2,10})$" type="text" placeholder="Nom" /><br />
+			<input data-regex="^([a-zA-Z-éèïäëê]{2,10})$" type="text" placeholder="Prenom" /><br />
+			<input data-regex="^(([0-9]{2}( )?){4}[0-9]{2})$" type="tel" placeholder="Tél:" /><br />
+			<input data-regex="^([a-zA-Z-éèïäëê]{2,10})$" type="text" placeholder="Ville" />
+			<input data-regex="^^([0-9]{5})$" type="text" placeholder="CP" /><br />
+			<input data-regex="^([a-zA-Z-éèïäëê]{2,10})$" type="text" placeholder="Pays" /><br />
+			<input type="submit" value="Valider" />			
+		</form>
+		<h2>forumulaire 2</h2>
+		<form id="form2" action="">
+			<input data-regex="^([a-zA-Z-éèïäëê]{2,10})$" type="text" placeholder="Nom" /><br />
+			<input data-regex="^([a-zA-Z-éèïäëê]{2,10})$" type="text" placeholder="Prenom" /><br />
+			<input data-regex="^(([0-9]{2}( )?){4}[0-9]{2})$" type="tel" placeholder="Tél:" /><br />
+			<input data-regex="^([a-zA-Z-éèïäëê]{2,10})$" type="text" placeholder="Ville" />
+			<input data-regex="^^([0-9]{5})$" type="text" placeholder="CP" /><br />
+			<input data-regex="^([a-zA-Z-éèïäëê]{2,10})$" type="text" placeholder="Pays" /><br />
+			<input type="submit" value="Valider" />			
+		</form>
+	</body>
+	<script type="text/javascript">
+
+		/*Une classe : une fonction dans laquelle on a un objet qui est aussi prototype et dans lequel on a au moins une fonction initialize*/
+		var checkForm= function(options){ 
+			var $this = protoype = { 
+				initialize:function(){ 
+					var field = document.querySelectorAll(options.container+' [data-regex]');
+					for(var i=0, il=field.length; i<il; i++) field[i].addEventListener('blur', $this.check);
+					return this;
+				},
+				check:function(elm){
+					elm = typeof(elm.target) != "undefined" ? elm.target : elm;
+					var res = new RegExp(elm.getAttribute('data-regex')).test(elm.value);
+					elm.style.border = "1px solid "+(res ? options.good : options.error);
+					return res;
+				}
+			}
+			return $this.initialize();
+		}
+
+		var form = new checkForm({
+			container:"#form1",
+			error:"red",
+			good:"green"
+		});
+		var form = new checkForm({
+			container:"#form2",
+			error:"red",
+			good:"green"
+		});
+
+
+/*		function test(){return this}
+		alert(test());
+		
+		
+		*/
+
+/*		var checkForm = function(options){
+			var fnc = protoype = {
+				initialize : function(){
+					alert(options.text);
+					return this;},
+				b : function(){
+					this.initialize();},
+
+			}
+			return fnc.initialize();
+		}
+
+		var check = new checkForm({ //new pour nouvel objet unique en mémoire et prototype pour etre sur et avoir les erreurs 
+			text : "Stéphane"
+		});
+		var check2 = new checkForm({
+			text : "Mathieu"
+		});*/
+
+
+	</script>
+</html>

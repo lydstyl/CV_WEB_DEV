@@ -1,0 +1,46 @@
+<div>Joueur 1</div>
+<table>
+	<tr>
+		<td width="40" height="40" align="center" valign="middle" style="border:1px solid #000"></td>
+		<td width="40" height="40" align="center" valign="middle" style="border:1px solid #000"></td>
+		<td width="40" height="40" align="center" valign="middle" style="border:1px solid #000"></td>
+	</tr>
+	<tr>
+		<td width="40" height="40" align="center" valign="middle" style="border:1px solid #000"></td>
+		<td width="40" height="40" align="center" valign="middle" style="border:1px solid #000"></td>
+		<td width="40" height="40" align="center" valign="middle" style="border:1px solid #000"></td>
+	</tr>
+	<tr>
+		<td width="40" height="40" align="center" valign="middle" style="border:1px solid #000"></td>
+		<td width="40" height="40" align="center" valign="middle" style="border:1px solid #000"></td>
+		<td width="40" height="40" align="center" valign="middle" style="border:1px solid #000"></td>
+	</tr>
+</table>
+<script>
+	var cases = [['','',''],['','',''],['','','']],
+		td = document.getElementsByTagName('td'),
+		joueur = 0;
+	function check(){
+		for(var c=0; c<3; c++){
+			if(/^(XXX|OOO)$/.test(cases[c].join(''))) return cases[c][0];
+			if(/^(XXX|OOO)$/.test(cases[0][c]+cases[1][c]+cases[2][c])) return cases[0][c];
+		}
+		if(/^(XXX|OOO)$/.test(cases[0][0]+cases[1][1]+cases[2][2]) || /^(XXX|OOO)$/.test(cases[0][2]+cases[1][1]+cases[2][0])) return cases[1][1];
+		return false;
+	}
+	for(var i=0; i<3; i++){
+		for(var j=0; j<3; j++){
+			(function(i, j){
+				td[i*3+j].addEventListener('click', function(){
+					cases[i][j] = this.innerHTML = joueur % 2 == 0 ? 'X' : 'O';
+					var retour = check()
+					if(retour){
+						alert( 'Le joueur '+(retour == 'X' ? 1 : 2)+' à gagné' );
+						document.location.reload();
+					}
+					document.getElementsByTagName('div')[0].innerHTML = 'Joueur '+(joueur++ % 2 ? 1 : 2);
+				});
+			})(i, j);
+		}
+	}
+</script>

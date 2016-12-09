@@ -1,0 +1,17 @@
+<garage>
+    <voiture>
+        <marque>Peugeot</marque>
+        <couleur>bleue</couleur>
+        <km>55326</km>
+    </voiture>
+    <voiture>
+        <marque>Renault</marque>
+        <couleur>verte</couleur>
+        <km>222365</km>
+    </voiture>
+    <moto>
+        <marque>Audi</marque>
+        <couleur>blanche</couleur>
+        <km>130000</km>
+    </moto>
+</garage>

@@ -1,0 +1,17 @@
+compatibilité :
+IE8+
+FF
+CHROME
+iPhone 4+
+iPad
+Os android
+
+
+@color pink: #ED137D
+@border grey: #EBEBEB
+@font-family: 'Montserrat'
+@color text grey : #7F7F7F
+@color text grey dark : #4C4C4C
+@color text black : #1D1D1D
+@background grey : #F7F7F7
+@background grey : #909090

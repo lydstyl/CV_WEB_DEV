@@ -1,0 +1,84 @@
+
+body{min-width:320px;font-family:arial}
+h1{font-size:36px; font-weight: bold; background: black; color: white; display:inline; position: absolute;
+ bottom:400px;  width:calc(100%-80px); left:40px; padding:0 12px
+}
+h2{}
+h3{margin-top:75px;line-height:70px;font-size:24px;text-align:center} /* REcent Causes */
+h4{line-height:50px;font-size:12px;}/* exemple SPONSOR A CHILD TODAY */
+h5{line-height:65px;font-size:22px}/* Charity For Education */
+.sous-titre{font-size:16px;color:#778588;margin-bottom:20px} /* sous titre du h3 */
+.para-h4{font-size:16px;color:#b0b0b0}/* paragraphe sous les h4 et h5 */
+
+.MG-grey-bar .fa-dot-circle-o{position:absolute; font-size:18px; left:-15px; top:-9px; color:#EE540A; left:-13px; }
+.MG-grey-bar{position:relative; width:90px; height:2px; background-color:#DBDBDB; margin-left:13px; margin-bottom:35px}
+
+#MG-ourmission h3{margin-bottom:0; padding:0; font-size:32px}
+#MG-ourmission .para-h4{margin-top:0; margin-bottom:30}
+#MG-ourmission{text-align:center}
+#MG-ourmission .para-h4{color:#796E76;}
+.MG-grey-bar-center-right .fa-dot-circle-o{position:absolute; font-size:18px; left:-15px; top:-9px; color:#DBDBDB;}
+.MG-grey-bar-center-left{display:inline-block; position:relative; width:50px; height:2px; background-color:#DBDBDB; margin-bottom:35px;}
+.MG-grey-bar-center-right{display:inline-block; position:relative; width:50px; height:2px; background-color:#DBDBDB; margin-left:13px; margin-bottom:35px;}
+
+.MG-divgreybarcentral{font-size:0; display:block;}
+.MG-grey-bar-center-right .fa-dot-circle-o{position:absolute; font-size:18px; left:-15px; top:-9px; color:#DBDBDB;}
+.MG-grey-bar-center-left{display:inline-block; position:relative; width:50px; height:2px; background-color:#DBDBDB; margin-bottom:35px;}
+.MG-grey-bar-center-right{display:inline-block; position:relative; width:50px; height:2px; background-color:#DBDBDB; margin-left:13px; margin-bottom:35px;}
+
+
+/* mireille our gallery*/
+
+.MM-our-gallery {max-width:1200px; margin-left:auto; margin-right:auto}
+.MM-col-height {height:72px; margin-bottom:5px; padding-left:0; padding-right:5px}
+.MM-row-width img{width:100%;height:100%; margin-bottom:5px}	
+.MM-orange-block {height:320px; background:#EC5B1C; margin-left:-10px; margin-right:-10px}
+.MM-we-serve {line-height: ; font-size: 32px; color: white; text-align:center}
+.MM-our-gallery .MM-row-width {margin:0 -12px 0 -7px}
+.MM-we-serve{ height: 320px; text-align:left; text-align:center; margin-top:22px; font-size:24px; font-weight:bold; padding-top:55px}
+.MM-we-serve p {line-height:30px; font-size:14px; font-weight:bold; padding-left:15px; padding-right:15px}
+.MM-we-serve a {text-decoration:none; color:black; background:white; width:170px; border-radius:50px;
+display: inline-block;font-size:12px; line-height:48px ; margin-left:15px}
+
+
+/* our gallery version mobile */
+.MM-orange-block-1 {height: 1240px ; background:#EC5B1C;margin-top:2px; margin-left: -10px; margin-right:-10px; padding-bottom:20px}
+.MM-we-serve-1 { ; font-size: 32px; color: white; text-align:center}
+.MM-we-serve-1 p {line-height:56px; font-size:28px; font-weight:bold; padding-left:15px; padding-right:15px; margin-top:0}
+.MM-we-serve-1 a {text-decoration:none; color:#EC5B1C; background:white; width:170px; border-radius:50px;
+display: inline-block;font-size:14px; line-height:42px ; margin-left:15px; font-weight: bold}
+.MM-quantities-1 {height:255px}
+.MM-quantities-1 .fa-heartbeat { font-size: 50px; border: 3px solid white; color: white; border-radius:100%; width:50px; 
+text-align:center; height:50px; line-height:100px; height:100px; width:100px}
+.MM-numbers-1{line-height:85px; font-size: 40px; color:white; margin:0;text-align:center; font-weight: bold; letter-spacing:8px}
+.MM-numbers1-1{font-size: 14px;line-height:10px; color: white; font-weight: bold; text-align:center}
+.MM-quantities-1{text-align:center}
+
+
+@media screen and (min-width:40rem){
+
+.MM-row-width {max-width:1200px;margin:0 -9px 0 -10px; padding:0}	
+.MM-col-height { height:260px}
+.MM-row-width {margin-left:-7px; margin-right:-12px}
+.MM-row-width img{width:100%; height:100%; }	
+.MM-orange-block {height:360px; background:#EC5B1C; margin-left:-8px; margin-right:-8px}
+.MM-we-serve {line-height:50px; height: 310px; text-align:left; padding-left:35px; margin-top:50px; font-size:28px}
+.MM-we-serve p {font-size:28px; line-height:38px; padding-right:40px; margin-top:-20px}
+.MM-quantities .fa-heartbeat { font-size: 50px; border: 3px solid white; color: white; border-radius:100%; width:50px; 
+text-align:center; height:50px; line-height:100px; height:100px; width:100px}
+.MM-our-gallery .MM-we-serve a{border:2px solid white; text-decoration:none; color: #EC5B1C; background:white; width:170px; border-radius:50px; font-size:12px;
+ line-height:40px; height:40px; display:inline-block; font-weight:bold; text-align:center}
+.MM-our-gallery .MM-row-margin {margin-top:80px}
+.MM-numbers{line-height:85px; font-size: 38px; color:white; margin:0;text-align:center; font-weight: bold;}
+.MM-numbers1{font-size: 14px;line-height:10px; color: white; font-weight: bold; text-align:center}
+.MM-quantities {text-align:center}
+
+
+}
+
+@media screen and (max-width:48rem){
+
+.MM-we-serve {margin-top:0px}
+
+
+}	

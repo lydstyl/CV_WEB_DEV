@@ -1,0 +1,50 @@
+<div>Joueur 1</div>
+<table>
+	<tr>
+		<td width="40" height="40" align="center" valign="middle" style="border:1px solid #000"></td>
+		<td width="40" height="40" align="center" valign="middle" style="border:1px solid #000"></td>
+		<td width="40" height="40" align="center" valign="middle" style="border:1px solid #000"></td>
+	</tr>
+	<tr>
+		<td width="40" height="40" align="center" valign="middle" style="border:1px solid #000"></td>
+		<td width="40" height="40" align="center" valign="middle" style="border:1px solid #000"></td>
+		<td width="40" height="40" align="center" valign="middle" style="border:1px solid #000"></td>
+	</tr>
+	<tr>
+		<td width="40" height="40" align="center" valign="middle" style="border:1px solid #000"></td>
+		<td width="40" height="40" align="center" valign="middle" style="border:1px solid #000"></td>
+		<td width="40" height="40" align="center" valign="middle" style="border:1px solid #000"></td>
+	</tr>
+</table>
+<script>
+	var cases = [['','',''],['','',''],['','','']],
+		td = document.getElementsByTagName('td'),
+		joueur = 0;
+	function check(){
+		for(var i=0; i<3; i++){
+			if(cases[i].join('') == 'XXX' || cases[i].join('') == 'OOO') return cases[i][0];
+		}
+		for(j=0; j<3; j++){
+			if(cases[0][j]+cases[1][j]+cases[2][j] == 'XXX' || cases[0][j]+cases[1][j]+cases[2][j] == 'OOO') return cases[0][j];
+		}
+		if(cases[0][0]+cases[1][1]+cases[2][2] == 'XXX' || cases[0][0]+cases[1][1]+cases[2][2] == 'OOO') return cases[0][0];
+		if(cases[0][2]+cases[1][1]+cases[2][0] == 'XXX' || cases[0][2]+cases[1][1]+cases[2][0] == 'OOO') return cases[0][2];
+		return false;
+	}
+	for(var i=0; i<3; i++){
+		for(var j=0; j<3; j++){
+			(function(k, l){ /*IIFE*/
+				td[k*3+l].addEventListener('click', function(){
+					cases[k][l] = this.innerHTML = joueur % 2 == 0 ? 'X' : 'O';
+					var retour = check()
+					if(retour){
+						alert( 'Le joueur '+(retour == 'X' ? 1 : 2)+' à gagné' );
+						document.location.reload();
+					}
+					document.getElementsByTagName('div')[0].innerHTML = 'Joueur '+(joueur % 2 ? 1 : 2);
+					joueur++;
+				});
+			})(i, j);
+		}
+	}
+</script>

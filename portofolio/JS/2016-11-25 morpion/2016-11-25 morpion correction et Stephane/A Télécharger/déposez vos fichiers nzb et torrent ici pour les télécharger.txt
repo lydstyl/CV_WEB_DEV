@@ -1,0 +1,2 @@
+Si l'option dossier surveillé est activé les fichiers .torrent et .nzb que vous
+déposez dans ce dossier seront automatiquement ajoutés à la liste des téléchargements.

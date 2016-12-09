@@ -1,0 +1,9 @@
+
+
+geoloc 2.5 2.6 à voir
+
+canvas ?
+
+pdf
+
+qrcode

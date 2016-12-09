@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="css/jquery-ui.css" />
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <link type="text/css" rel="stylesheet" href="font-awesome.css" />
+    <link type="text/css" rel="stylesheet" href="css/grid.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>testestse</title>
+  </head>
+  <body>
+	<!-- <button id="test1">ADD</button> -->
+	
+	<button id="validate">VALIDATE</button>
+
+  </body>
+  <script type="text/javascript">
+
+	$("#validate").click(function(){
+		$.ajax({
+			url:"json.js",
+			type:"GET",
+			dataType:"json"
+		}).done(function(data){
+			$("document").append(data);
+			
+			alert(data.json[0].prenom);
+			for (var item in data){
+				console.log(data[item]);
+				$("body").append($("<div/>").css({color:'red'}).html(item));
+				for(var item2 in item)
+				{
+					$("body").append($("<div/>").css({color:'red'}).html(item[item2]));
+				}
+			
+				
+				
+			}
+			
+			
+		}).fail(function(){
+			alert("error");
+		}).always(function(){
+			alert("complete");
+		});
+		
+		
+		var newDiv= $("<div/>");
+		//$("body").append(newDiv).css({color:'red'}).html('test');
+		
+		
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+  </script>
+</html>
+
+
+<!-- 
+	error 405 quand on utilise method="post", car google attend un GET et pas un POST !
+	GET => parametre dans l'url , pb => 512 caractères max pour une URL, c'est donc limité !
+	POST => Envois un petit fichier en parrallèle en même temps que la page, ce n'est plus dans l'URL, mais quantité illimité !
+	Si on ne préscise pas, GET est l'element par défaut.
+	
+	(on va utiliser de l'ajax via jquery, pas d'ajax natif)
+	1ere methode jquery pour faire de l'ajax :
+	$.ajax
+	
+	$.get => deuxieme façon
+	$.post => troisième façon
+	
+	/!\ si je suis sur un site A, à partir du site A je peu faire une requete ajax à partir du site A. point final. Tamersisi.
+	$.ajax({
+		url:'index2.html', //url de ton fichier
+		type:'GET', //type, GET OU POST
+		dataType:'html' // type du fichier
+	}).done(function(data){
+		alert(data);
+	});
+	console.log("coco"); 
+	==> récupere toutes les données dans la page index2 !
+	
+	$("body").append(data);
+	=> on récupere et on affiche les données de la page index2!
+	
+	VISUAL EVENT tu devra le caller sur firefox, je t'explique demain !
+	http://www.sprymedia.co.uk/article/visual+event+2
+	
+	
+		$("#test1").click(function(){
+		$.ajax({
+			url:'index2.html',
+			type:'GET',
+			dataType:'html'
+		}).done(function(data){
+				$("body").append(data);
+
+		});
+		console.log("coco");
+	});
+	
+	$("#validate").click(function(){
+		console.log($("select").html);
+	});
+	
+	-------
+	$("#validate").click(function(){
+		$.ajax({
+			url:"json.js",
+			type:"GET",
+			dataType:"json"
+		}).done(function(data){
+			$("document").append(data);
+			alert(data.json[0].nom);
+
+		}).fail(function(){ // si il y a une erreur (par ex: sur le fichier json), renvois une alerte error
+			alert("error");
+		}).always(function(){ // si tout est bien foutu, on affiche COMPLETE SISI JEAN CLAUDE
+			alert("complete");
+		});
+	});
+	
+	=> ce code couplé au code du fichier json dans l'archive permet d'appeler le contenu du fichier json dans notre page HTML(via alert)
+	
+	
+	
+-->
