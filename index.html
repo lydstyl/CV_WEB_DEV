@@ -30,7 +30,7 @@
 									<div class="column small-show small-3 medium-hide desktop-show">
 										<i class="fa fa-user"></i>
 									</div>
-									<div class="column about small-9 medium-12 desktop-9">
+									<div class="column about small-9 medium-12 desktop-9 print-12">
 										<p>
 											Père de famille depuis 2014, je suis aussi un 
 											autodidacte reconverti dans l'informatique qui m’a 
@@ -39,8 +39,7 @@
 											développement web. 
 										</p>
 										<div class="blueBar small-show medium-hide desktop-show"></div>
-									</div>
-									
+									</div>									
 								</div>
 							</div>
 						</div>
@@ -52,22 +51,21 @@
 							<div class="column medium-6 desktop-12">
 								<div class="row">
 									<div class="column small-3 medium-12 desktop-3">
-										<i class="fa fa-phone"></i>
+										<i class="fa fa-phone print-hide"></i>
 									</div>
 									<div class="column center small-9 medium-12 desktop-9">
-										<a class="medium-hide desktop-hide" href="tel:+33781154503">07 81 15 45 03</a> 
-										<span class="small-hide medium-show desktop-show">07 81 15 45 03</span>
+										<a class="medium-hide desktop-hide print-hide" href="tel:+33781154503">07 81 15 45 03</a> 
+										<span class="small-hide medium-show desktop-show print-12">07 81 15 45 03</span>
 										<div class="blueBar small-show medium-hide desktop-show"></div> 
-									</div>
-									
+									</div>									
 								</div>
 							</div>
 							<div class="column medium-6 desktop-12">
 								<div class="row">
 									<div class="column small-3 medium-12 desktop-3">
-										<i class="fa fa-envelope"></i>
+										<i class="fa fa-envelope print-hide"></i>
 									</div>
-									<div class="column center small-9 medium-12 desktop-9">
+									<div class="column center small-9 medium-12 desktop-9 print-12">
 										<a href="mailto:gabriel.brun@yahoo.fr">gabriel.brun@yahoo.fr</a>
 										<div class="blueBar small-show medium-hide desktop-show"></div>
 									</div>									
@@ -75,8 +73,7 @@
 							</div>
 						</div>							
 					</div>
-				</div>
-				
+				</div>				
 				<div class="row">
 					<div class="column">
 						<div class="row">
@@ -87,7 +84,7 @@
 								<a class="small-show medium-hide desktop-hide" href="geo:50.399069,3.458182">
 									Raismes (59)
 								</a>
-								<a class="small-hide medium-show desktop-show" href="https://goo.gl/maps/HwM45wBkGrT2" target="_blank">
+								<a class="small-hide medium-show desktop-show print-12" href="https://goo.gl/maps/HwM45wBkGrT2" target="_blank">
 									Raismes (59)
 								</a>
 								<div class="blueBar small-show medium-hide desktop-show"></div>
@@ -96,7 +93,6 @@
 						<div class="row progressContainer">
 							<div class="column small-show small-3 medium-hide desktop-show desktop-3">
 								<i class="fa fa-check-square"></i>
-
 							</div>
 							<div class="column small-9 medium-12 desktop-9">
 								<div class="row">
@@ -210,7 +206,7 @@
 							</div>
 							<div class="column medium-10 desktop-10">
 								<h2>Expérience commerciales</h2>
-								<h3>Assistant Service Clients, DSV</h3> <!--la-->
+								<h3>Assistant Service Clients, DSV</h3>
 								<strong>07/2016 – 10/2016</strong>
 								<h3>
 									Assistant Commercial, EDF
@@ -273,7 +269,7 @@
 								<a href="https://www.linkedin.com/in/gabrielbrun?trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin-square"> Linkedin</i></a>
 							</div>	
 							<div class="column small-4 linkedinAndViadeo">
-								<a href="./portofolio.html" target="_blank"><i class="fa fa-suitcase"> Portofolio</i></a>
+								<a href="https://lydstyl.github.io/CV_WEB_DEV/portofolio.html" target="_blank"><i class="fa fa-suitcase"> Portofolio</i></a>
 							</div>	
 							<div class="column small-4 linkedinAndViadeo">	
 								<a href="http://fr.viadeo.com/fr/profile/gabriel.brun" target="_blank"><i class="fa fa-viadeo-square"> Viadeo</i></a>
@@ -284,4 +280,10 @@
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript">
+	        window.onbeforeprint = function() {
+				window.open('doc/CV_GABRIEL_BRUN_DEV_FULL-STACK.pdf', 'CV_GABRIEL_BRUN_DEV_FULL-STACK', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no');
+            	alert("Pour un meilleurs rendu, merci d'imprimer la version .pdf qui vient de s'ouvrir dans une popup.");
+        	};
+	</script>
 </html>

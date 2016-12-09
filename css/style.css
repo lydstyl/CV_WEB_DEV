@@ -59,7 +59,6 @@ p{margin:0;}
 .column.right .linkedinAndViadeo{text-align:center}
 .column.right .linkedinAndViadeo a i{font-size:16px;color:#5DA4DA}
 .column.right .linkedinAndViadeo a:hover i{font-weight:bold}
-
 @media screen and (min-width:500px){
 	.column.left h1{font-size:28px}
 	.column.left p{margin-top:30px}
@@ -68,7 +67,6 @@ p{margin:0;}
 	.column.left .column.center{text-align:center}  
 	.column.left a{text-align:center}
 }
-
 @media screen and (min-width:800px){
 	.wrapper{width:800px;padding:24px 0}
 	.column.left p{margin-top:0}
@@ -77,28 +75,10 @@ p{margin:0;}
 	.column.left a{font-size:16px;text-align:left}
 	.column.right .education{margin-top:0}
 }
-
-/*@media print{
-	@page{margin:10%;} --> erreur W3C
-}*/
-
-/*@media print{ 
-	@page {margin:10%}
-	body {background-color :#fff}
-	.wrapper { 
-		width:799px;
-		margin :0;
-		padding: 0;
-		box-shadow:none;
-		border :none;
-	}
-	#banner, #menuright, #footer {display :none;}
-	h1#top { 
-		margin :0;
-		padding :0;
-		text-indent :0;
-		line-height :25pt;
-		font-size :25pt;
-	}
-	h2, h3, #contenu h3, #contenu a, a {color :#000}
-}*/
+@media print{
+	/*@page{margin:10%;} --> erreur W3C*/
+	.print-hide, .bar {display:none}
+	body * {box-shadow:none;margin: 1px;padding: 0;color:black}
+	.print-12 {display:block}
+	.column.titre {display: block;color:#000}
+}
