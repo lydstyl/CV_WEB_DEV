@@ -1,6 +1,6 @@
-version imprimable !!
-javascript dans CV
-ajout applications
-ajout lien wordpress
-ajout vidéo django
 correction et mise en page portofolio
+ajout vidéo django
+ajout lien wordpress
+ajout applications lune
+javascript dans CV
+correction diaporama
