@@ -1,6 +1,7 @@
-correction et mise en page portofolio
-ajout vidéo django
-ajout lien wordpress
+correction éléments du portfolio 
+	django
+	construction
+	diaporama
+	animation banque
 ajout applications lune
 javascript dans CV
-correction diaporama
