@@ -284,9 +284,28 @@
 		</div>
 	</body>
 	<script type="text/javascript">
+/*	        window.onbeforeprint = function() {
+				window.open('doc/CV_GABRIEL_BRUN_DEV_FULL-STACK.pdf', 'CV_GABRIEL_BRUN_DEV_FULL-STACK', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no');
+            	alert("Pour un meilleurs rendu, merci d'imprimer la version .pdf qui vient de s'ouvrir dans une popup.");
+			}*/
+
+		window.EventTarget.addEventListener('beforeprint',function(){alert("coco")});
+
+/*		if ('matchMedia' in window) {
+			window.matchMedia('print').addListener(function (media) {
+			//do before-printing stuff
+				alert(media);
+				window.open('doc/CV_GABRIEL_BRUN_DEV_FULL-STACK.pdf', 'CV_GABRIEL_BRUN_DEV_FULL-STACK', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no');
+            	alert("Pour un meilleurs rendu, merci d'imprimer la version .pdf qui vient de s'ouvrir dans une popup.");
+			});
+		} else {
 	        window.onbeforeprint = function() {
 				window.open('doc/CV_GABRIEL_BRUN_DEV_FULL-STACK.pdf', 'CV_GABRIEL_BRUN_DEV_FULL-STACK', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no');
-            	alert("Pour un meilleurs rendu, merci d'imprimer la version .pdf qui, normalement, vient de s'ouvrir dans une popup.");
+            	alert("Pour un meilleurs rendu, merci d'imprimer la version .pdf qui vient de s'ouvrir dans une popup.");
         	};
+			}
+		}*/
+			//http://stackoverflow.com/questions/13598790/onbeforeprint-and-onafterprint-is-not-working-in-chrome-and-ie
+
 	</script>
 </html>

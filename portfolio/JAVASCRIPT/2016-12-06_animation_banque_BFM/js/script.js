@@ -1,5 +1,5 @@
 $(function(){
-    var speed = 80;
+    var speed = 160;
     function writeImg(){
         hideAll();
         $("img").eq(0).show();
